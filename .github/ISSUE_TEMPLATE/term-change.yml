@@ -1,0 +1,51 @@
+name: Terminology change
+description: Propose a new term or a definition/status change
+title: "term: "
+labels: [terminology]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      description: Give the English and Latvian labels if known.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change
+    attributes:
+      label: Proposed change
+      options:
+        - Add a term
+        - Change a definition
+        - Change a status
+        - Change a translation
+        - Deprecate or move a term
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Primary or authoritative source
+      description: Provide a direct URL and explain what it supports.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and conflicts
+      description: Explain the proposed wording and any conflicting usage.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I am not presenting an editorial metaphor as an industry-standard role.
+          required: true
+        - label: I have not included personal data, credentials, or incident-sensitive details.
+          required: true

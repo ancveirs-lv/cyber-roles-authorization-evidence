@@ -1,0 +1,33 @@
+name: Source correction
+description: Report a broken, outdated, or misrepresented source
+title: "source: "
+labels: [sources]
+body:
+  - type: input
+    id: source_id
+    attributes:
+      label: Source ID or page
+      description: Identify the data record or documentation page.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem type
+      options:
+        - Broken link
+        - Source no longer current
+        - Claim not supported by source
+        - Better primary source available
+        - Translation changes the meaning
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and proposed correction
+      description: Link the source and quote only the minimum text needed to locate the issue.
+    validations:
+      required: true

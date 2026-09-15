@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this terminology reference, please cite it as follows."
+title: "Cyber Roles, Authorization & Evidence"
+type: dataset
+version: 0.1.0
+date-released: 2026-09-15
+authors:
+  - family-names: Ancveirs
+    given-names: Zigmārs
+license: CC-BY-4.0
+repository-code: "https://github.com/ancveirs-lv/cyber-roles-authorization-evidence"
+url: "https://ancveirs-lv.github.io/cyber-roles-authorization-evidence/"
+abstract: "A bilingual Latvian-English, source-backed reference for cybersecurity roles, authorization boundaries, disclosure mechanisms, evidence, and public claims."

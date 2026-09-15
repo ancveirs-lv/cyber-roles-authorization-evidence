@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/editorial-metaphors.schema.json",
+  "title": "Editorial metaphors",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "editorial_metaphors"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "editorial_metaphors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id", "label_en", "label_lv", "status", "standardised",
+          "meaning_en", "meaning_lv", "usage_rule_en", "usage_rule_lv"
+        ],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "label_en": {"type": "string", "minLength": 1},
+          "label_lv": {"type": "string", "minLength": 1},
+          "status": {"const": "editorial_metaphor"},
+          "standardised": {"const": false},
+          "meaning_en": {"type": "string", "minLength": 1},
+          "meaning_lv": {"type": "string", "minLength": 1},
+          "usage_rule_en": {"type": "string", "minLength": 1},
+          "usage_rule_lv": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

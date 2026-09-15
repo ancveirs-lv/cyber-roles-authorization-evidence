@@ -1,0 +1,23 @@
+:root {
+  --md-primary-fg-color: #111111;
+  --md-accent-fg-color: #555555;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.75rem;
+}
+
+.md-typeset blockquote {
+  border-left-color: #111111;
+}
+
+.term-status {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid currentColor;
+  border-radius: 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}

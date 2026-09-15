@@ -1,0 +1,31 @@
+schema_version: 1
+editorial_metaphors:
+  - id: red_cap_team
+    label_en: Red Cap Team
+    label_lv: Red Cap Team
+    status: editorial_metaphor
+    standardised: false
+    meaning_en: A satirical image for a public commentator who borrows a practitioner's visual or rhetorical authority without demonstrating the corresponding operational role.
+    meaning_lv: Satīrisks tēls publiskam komentētājam, kas aizņemas praktiķa vizuālo vai retorisko autoritāti, neuzrādot atbilstošo operacionālo lomu.
+    usage_rule_en: Criticise documented behaviour, not identity; always state that the phrase is author-created and not an industry term.
+    usage_rule_lv: Kritizē dokumentētu rīcību, ne identitāti; vienmēr norādi, ka frāze ir autora radīta un nav nozares termins.
+
+  - id: cyber_hype_team
+    label_en: Cyber Hype Team
+    label_lv: Cyber Hype Team
+    status: editorial_metaphor
+    standardised: false
+    meaning_en: An editorial shorthand for attention-maximising cyber commentary that overstates certainty or impact.
+    meaning_lv: Redakcionāls saīsinājums uzmanību maksimizējošam kiberdrošības komentāram, kas pārspīlē noteiktību vai ietekmi.
+    usage_rule_en: Do not present it as a profession, certification, or stable community category.
+    usage_rule_lv: Nepasniegt kā profesiju, sertifikāciju vai stabilu kopienas kategoriju.
+
+  - id: post_factum_team
+    label_en: Post-Factum Team
+    label_lv: Post-Factum Team
+    status: editorial_metaphor
+    standardised: false
+    meaning_en: A satirical label for confident explanation after an outcome is already known, used to introduce hindsight bias.
+    meaning_lv: Satīrisks apzīmējums pārliecinātam skaidrojumam pēc tam, kad iznākums jau zināms; izmantojams atskata kļūdas ievadīšanai.
+    usage_rule_en: Use as a clearly signposted rhetorical device, never as an allegation about undisclosed access or intent.
+    usage_rule_lv: Lietot kā skaidri marķētu retorisku paņēmienu, nevis kā apgalvojumu par nepierādītu piekļuvi vai nolūku.

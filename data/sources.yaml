@@ -1,0 +1,313 @@
+schema_version: 1
+sources:
+  - id: rfc1392
+    title: Internet Users' Glossary — RFC 1392
+    publisher: IETF / RFC Editor
+    source_type: standard_or_specification
+    tier: 1
+    url: https://www.rfc-editor.org/rfc/rfc1392.html
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [hacker, cracker]
+    note_en: Informational historical glossary, not an Internet Standard.
+    note_lv: Informatīva vēsturiska vārdnīca, ne interneta standarts.
+
+  - id: rfc9116
+    title: A File Format to Aid in Security Vulnerability Disclosure — RFC 9116
+    publisher: IETF / RFC Editor
+    source_type: standard_or_specification
+    tier: 1
+    url: https://www.rfc-editor.org/rfc/rfc9116.html
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [security_txt, vdp]
+    note_en: Defines security.txt and explicitly separates contact discovery from authorization.
+    note_lv: Definē security.txt un tieši nošķir kontakta atrašanu no autorizācijas.
+
+  - id: iso_29147
+    title: ISO/IEC 29147:2018 Vulnerability disclosure
+    publisher: ISO
+    source_type: standard_or_specification
+    tier: 1
+    url: https://www.iso.org/standard/72311.html
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [cvd]
+    note_en: Official public catalogue page; the full standard is not freely reproduced here.
+    note_lv: Oficiāla publiskā kataloga lapa; pilnais standarts šeit netiek pārpublicēts.
+
+  - id: eu_dora_tlpt
+    title: Commission Delegated Regulation (EU) 2025/1190 on threat-led penetration testing
+    publisher: European Union
+    source_type: law_or_regulation
+    tier: 1
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1190
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [red_team, purple_teaming, penetration_tester]
+    note_en: EU regulatory context for threat-led testing and limited purple teaming.
+    note_lv: ES regulatīvais konteksts draudu vadītai testēšanai un ierobežotam purple teaming.
+
+  - id: nist_hacker
+    title: Hacker — CSRC Glossary
+    publisher: NIST
+    source_type: institutional_glossary
+    tier: 1
+    url: https://csrc.nist.gov/glossary/term/hacker
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [hacker]
+    note_en: Current institutional usage differs from the positive Jargon File tradition.
+    note_lv: Pašreizējais institucionālais lietojums atšķiras no pozitīvās Jargon File tradīcijas.
+
+  - id: nist_glossary
+    title: Computer Security Resource Center Glossary
+    publisher: NIST
+    source_type: institutional_glossary
+    tier: 1
+    url: https://csrc.nist.gov/glossary/
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [attacker, threat_actor, hacktivist]
+    note_en: Umbrella glossary used only where a more specific linked entry is not listed.
+    note_lv: Kopējā vārdnīca izmantota tikai tad, ja sarakstā nav konkrētākas saites.
+
+  - id: nist_red_team
+    title: Red Team — CSRC Glossary
+    publisher: NIST
+    source_type: institutional_glossary
+    tier: 1
+    url: https://csrc.nist.gov/glossary/term/red_team
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [red_team]
+    note_en: Supports authorised adversary-emulation framing.
+    note_lv: Pamato autorizētas pretinieka imitācijas formulējumu.
+
+  - id: nist_blue_team
+    title: Blue Team — CSRC Glossary
+    publisher: NIST
+    source_type: institutional_glossary
+    tier: 1
+    url: https://csrc.nist.gov/glossary/term/blue_team
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [blue_team]
+    note_en: Defines the defensive counterpart in an exercise context.
+    note_lv: Definē aizsardzības pusi vingrinājuma kontekstā.
+
+  - id: nist_white_team
+    title: White Team — CSRC Glossary
+    publisher: NIST
+    source_type: institutional_glossary
+    tier: 1
+    url: https://csrc.nist.gov/glossary/term/white_team
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [white_team]
+    note_en: Defines exercise-control and adjudication functions.
+    note_lv: Definē vingrinājuma kontroles un vērtēšanas funkcijas.
+
+  - id: nist_rules_of_engagement
+    title: Rules of Engagement — CSRC Glossary
+    publisher: NIST
+    source_type: institutional_glossary
+    tier: 1
+    url: https://csrc.nist.gov/glossary/term/rules_of_engagement
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [authorised_testing, penetration_tester, red_team]
+    note_en: Grounds the scope-and-rules concept for authorised exercises.
+    note_lv: Pamato tvēruma un noteikumu nozīmi autorizētos vingrinājumos.
+
+  - id: enisa_ecsf
+    title: European Cybersecurity Skills Framework — Role Profiles
+    publisher: ENISA
+    source_type: institutional_framework
+    tier: 1
+    url: https://www.enisa.europa.eu/publications/european-cybersecurity-skills-framework-role-profiles
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [security_researcher, ethical_hacker, penetration_tester, blue_team, incident_responder, digital_forensics_investigator, cyber_threat_intelligence_specialist, threat_actor, hacktivist, public_commentator, white_hat_hacker]
+    note_en: Used to distinguish roles by mission, tasks, knowledge, and outputs; some labels are alternative titles, not exact synonyms.
+    note_lv: Izmantots lomu nošķiršanai pēc misijas, uzdevumiem, zināšanām un rezultātiem; daži nosaukumi ir alternatīvi, ne identiski sinonīmi.
+
+  - id: mitre_red_teaming
+    title: Adversary Emulation and Red Teaming
+    publisher: MITRE ATT&CK
+    source_type: institutional_guidance
+    tier: 2
+    url: https://attack.mitre.org/resources/get-started/adversary-emulation-and-red-teaming/
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [red_team, purple_teaming]
+    note_en: Connects adversary behaviour emulation with defensive assessment and collaboration.
+    note_lv: Saista pretinieka uzvedības imitēšanu ar aizsardzības novērtēšanu un sadarbību.
+
+  - id: crest_red_teaming
+    title: Red Teaming
+    publisher: CREST
+    source_type: professional_framework
+    tier: 2
+    url: https://www.crest-approved.org/cyber-service-categories/red-teaming/
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [red_team, penetration_tester]
+    note_en: Professional-services framing for realistic assessment of people, processes, and technology.
+    note_lv: Profesionālu pakalpojumu skatījums uz cilvēku, procesu un tehnoloģiju reālistisku pārbaudi.
+
+  - id: certcc_cvd
+    title: CERT Guide to Coordinated Vulnerability Disclosure
+    publisher: CERT Coordination Center
+    source_type: institutional_guidance
+    tier: 2
+    url: https://certcc.github.io/CERT-Guide-to-CVD/tutorials/terms/cvd/
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [security_researcher, cvd, vdp, responsible_disclosure]
+    note_en: Core process terminology and rationale for preferring CVD.
+    note_lv: Procesa pamatterminoloģija un pamatojums CVD termina izvēlei.
+
+  - id: first_cvd
+    title: Guidelines and Practices for Multi-Party Vulnerability Coordination and Disclosure
+    publisher: FIRST
+    source_type: institutional_guidance
+    tier: 2
+    url: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [cvd, responsible_disclosure]
+    note_en: Multi-party coordination guidance.
+    note_lv: Daudzpusējas koordinācijas vadlīnijas.
+
+  - id: certlv_cvd
+    title: Koordinētas ievainojamību atklāšanas platformas BUJ
+    publisher: CERT.LV
+    source_type: institutional_guidance
+    tier: 2
+    url: https://cvd.cert.lv/faq/answers/100
+    language: lv
+    last_reviewed: "2026-09-15"
+    supports: [cvd, bug_bounty]
+    note_en: Primary Latvian source distinguishing CVD reporting, penetration testing, and rewards.
+    note_lv: Latvijas pirmavots, kas nošķir CVD ziņošanu, penetrācijas testu un atlīdzību.
+
+  - id: cisa_bod_20_01
+    title: BOD 20-01 — Develop and Publish a Vulnerability Disclosure Policy
+    publisher: CISA
+    source_type: institutional_policy
+    tier: 2
+    url: https://www.cisa.gov/news-events/directives/bod-20-01-develop-and-publish-vulnerability-disclosure-policy
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [vdp, bug_bounty]
+    note_en: Explicitly distinguishes a VDP from a bug-bounty programme.
+    note_lv: Tieši nošķir VDP no Bug Bounty programmas.
+
+  - id: ncsc_incident_comms
+    title: Effective communications in a cyber incident
+    publisher: UK National Cyber Security Centre
+    source_type: institutional_guidance
+    tier: 2
+    url: https://www.ncsc.gov.uk/guidance/effective-communications-in-a-cyber-incident
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [public_commentator, incident_responder]
+    note_en: Supports avoiding speculation, premature conclusions, and prejudice to investigations.
+    note_lv: Pamato izvairīšanos no spekulācijām, priekšlaicīgiem secinājumiem un izmeklēšanas apdraudēšanas.
+
+  - id: first_team_types
+    title: CSIRT Services Framework — Team Types v1.2
+    publisher: FIRST
+    source_type: institutional_framework
+    tier: 2
+    url: https://www.first.org/standards/frameworks/csirts/team-type_1.2
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [soc, csirt, psirt]
+    note_en: Helps distinguish overlapping security-team mandates.
+    note_lv: Palīdz nošķirt pārklājošos drošības komandu mandātus.
+
+  - id: first_csirt_services
+    title: CSIRT Services Framework v2.1
+    publisher: FIRST
+    source_type: institutional_framework
+    tier: 2
+    url: https://www.first.org/standards/frameworks/csirts/csirt_services_framework_v2.1
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [csirt, incident_responder]
+    note_en: Service framework for incident-management capabilities.
+    note_lv: Incidentu vadības spēju pakalpojumu ietvars.
+
+  - id: first_psirt_services
+    title: PSIRT Services Framework v1.1
+    publisher: FIRST
+    source_type: institutional_framework
+    tier: 2
+    url: https://www.first.org/standards/frameworks/psirts/psirt_services_framework_v1.1
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [psirt, cvd]
+    note_en: Product-security vulnerability handling and coordination framework.
+    note_lv: Produktu drošības ievainojamību apstrādes un koordinācijas ietvars.
+
+  - id: hackerone_safe_harbor
+    title: Gold Standard Safe Harbor Statement
+    publisher: HackerOne
+    source_type: professional_policy
+    tier: 3
+    url: https://docs.hackerone.com/en/articles/8494525-gold-standard-safe-harbor-statement
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [authorised_testing, ethical_hacker, bug_bounty]
+    note_en: Example of policy language treating compliant good-faith research as authorised within stated limits.
+    note_lv: Politikas teksta piemērs, kas noteikumiem atbilstošu labticīgu pētniecību noteiktās robežās atzīst par autorizētu.
+
+  - id: jargon_hacker
+    title: Hacker — The Jargon File
+    publisher: The Jargon File
+    source_type: community_primary
+    tier: 4
+    url: https://www.catb.org/jargon/html/H/hacker.html
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [hacker, white_hat_hacker, script_kiddie]
+    note_en: Historical community usage, not a legal or professional standard.
+    note_lv: Vēsturisks kopienas lietojums, ne juridisks vai profesionāls standarts.
+
+  - id: jargon_cracker
+    title: Cracker — The Jargon File
+    publisher: The Jargon File
+    source_type: community_primary
+    tier: 4
+    url: https://www.catb.org/jargon/html/C/cracker.html
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [cracker]
+    note_en: Historical community distinction between hacker and cracker.
+    note_lv: Vēsturiskais kopienas nošķīrums starp hacker un cracker.
+
+  - id: ccc_hacker_ethics
+    title: Hacker Ethics
+    publisher: Chaos Computer Club
+    source_type: community_primary
+    tier: 4
+    url: https://www.ccc.de/en/hackerethik
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [hacker, security_researcher]
+    note_en: Community ethics source combining curiosity with protection of private data.
+    note_lv: Kopienas ētikas avots, kas savieno zinātkāri ar privāto datu aizsardzību.
+
+  - id: rfpolicy
+    title: RFPolicy 2.0
+    publisher: Rain Forest Puppy / Packet Storm archive
+    source_type: community_primary
+    tier: 4
+    url: https://dl.packetstormsecurity.net/papers/general/rfpolicy-2.0.txt
+    language: en
+    last_reviewed: "2026-09-15"
+    supports: [full_disclosure, responsible_disclosure, cvd]
+    note_en: Historical disclosure-policy document showing that labels and actual coordination practices do not map neatly.
+    note_lv: Vēsturisks atklāšanas politikas dokuments, kas rāda, ka apzīmējumi un faktiskā koordinācija nav vienkārši pielīdzināmi.

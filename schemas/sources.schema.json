@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/sources.schema.json",
+  "title": "Cyber terminology sources",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source"}
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "title", "publisher", "source_type", "tier", "url",
+        "language", "last_reviewed", "supports", "note_en", "note_lv"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "title": {"$ref": "#/$defs/nonEmptyString"},
+        "publisher": {"$ref": "#/$defs/nonEmptyString"},
+        "source_type": {
+          "enum": [
+            "law_or_regulation", "standard_or_specification",
+            "institutional_glossary", "institutional_framework",
+            "institutional_guidance", "institutional_policy",
+            "professional_framework", "professional_policy",
+            "community_primary", "academic_research", "secondary_analysis"
+          ]
+        },
+        "tier": {"type": "integer", "minimum": 1, "maximum": 5},
+        "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "language": {"enum": ["en", "lv", "multi"]},
+        "last_reviewed": {"type": "string", "format": "date"},
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "uniqueItems": true
+        },
+        "note_en": {"$ref": "#/$defs/nonEmptyString"},
+        "note_lv": {"$ref": "#/$defs/nonEmptyString"}
+      }
+    }
+  }
+}
