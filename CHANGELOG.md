@@ -9,6 +9,7 @@ All notable changes are recorded here. The project follows [Semantic Versioning]
 - Reframed the incident-update list as an editorial rather than compliance checklist.
 - Strengthened safeguards against applying editorial metaphors to identifiable parties.
 - Added semantic claim-to-source cross-reference validation and regression coverage.
+- Added claim-level coverage for all 29 canonical term records and a build gate that rejects uncovered terms.
 
 ## [0.2.0] — 2026-09-16
 

@@ -1,7 +1,11 @@
 from pathlib import Path
 
 from scripts.configure_repository import configure, detect_current_owner
-from scripts.validate import run_all, validate_claim_source_fit
+from scripts.validate import (
+    run_all,
+    validate_claim_source_fit,
+    validate_term_claim_coverage,
+)
 
 
 def test_repository_content_is_valid() -> None:
@@ -53,4 +57,13 @@ def test_claim_source_fit_rejects_unrelated_source() -> None:
 
     assert validate_claim_source_fit(claims, sources) == [
         "claim/source mismatch: claim_one cites source_one without a supported claim term"
+    ]
+
+
+def test_term_claim_coverage_rejects_uncovered_term() -> None:
+    terms = [{"id": "red_team"}, {"id": "blue_team"}]
+    claims = [{"term_ids": ["red_team"]}]
+
+    assert validate_term_claim_coverage(terms, claims) == [
+        "term has no claim-level evidence: blue_team"
     ]

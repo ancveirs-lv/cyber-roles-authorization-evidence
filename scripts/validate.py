@@ -96,6 +96,16 @@ def validate_claim_source_fit(claims: list[dict], sources: list[dict]) -> list[s
     return errors
 
 
+def validate_term_claim_coverage(terms: list[dict], claims: list[dict]) -> list[str]:
+    """Require every canonical term record to be covered by the claim register."""
+    covered = {term_id for claim in claims for term_id in claim["term_ids"]}
+    return [
+        f"term has no claim-level evidence: {term['id']}"
+        for term in terms
+        if term["id"] not in covered
+    ]
+
+
 def validate_schema(data_path: Path, schema_path: Path) -> list[str]:
     data = load_yaml(data_path)
     schema = load_json(schema_path)
@@ -185,6 +195,7 @@ def validate_cross_references() -> list[str]:
             )
 
     errors.extend(validate_claim_source_fit(claims, sources))
+    errors.extend(validate_term_claim_coverage(terms, claims))
 
     return errors
 
