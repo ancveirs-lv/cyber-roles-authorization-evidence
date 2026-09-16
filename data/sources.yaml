@@ -44,7 +44,7 @@ sources:
     url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1190
     language: en
     last_reviewed: "2026-09-15"
-    supports: [red_team, purple_teaming, penetration_tester]
+    supports: [red_team, blue_team, purple_teaming, penetration_tester]
     note_en: EU regulatory context for threat-led testing and limited purple teaming.
     note_lv: ES regulatīvais konteksts draudu vadītai testēšanai un ierobežotam purple teaming.
 
@@ -140,7 +140,7 @@ sources:
     url: https://www.enisa.europa.eu/publications/european-cybersecurity-skills-framework-role-profiles
     language: en
     last_reviewed: "2026-09-16"
-    supports: [ethical_hacker, penetration_tester, incident_responder, digital_forensics_investigator, cyber_threat_intelligence_specialist]
+    supports: [security_researcher, ethical_hacker, penetration_tester, incident_responder, digital_forensics_investigator, cyber_threat_intelligence_specialist]
     note_en: Supports named ECSF role profiles and the Ethical Hacker alternative title under Penetration Tester; it is not used as a catch-all glossary.
     note_lv: Pamato konkrētus ECSF lomu profilus un Ethical Hacker alternatīvo nosaukumu pie Penetration Tester; netiek lietots kā universāla vārdnīca.
 
@@ -200,7 +200,7 @@ sources:
     url: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
     language: en
     last_reviewed: "2026-09-15"
-    supports: [cvd, responsible_disclosure]
+    supports: [cvd, responsible_disclosure, full_disclosure]
     note_en: Multi-party coordination guidance.
     note_lv: Daudzpusējas koordinācijas vadlīnijas.
 
@@ -253,7 +253,7 @@ sources:
     note_lv: Pamato izvairīšanos no spekulācijām, priekšlaicīgiem secinājumiem un izmeklēšanas apdraudēšanas.
 
   - id: first_team_types
-    title: CSIRT Services Framework — Team Types v1.2
+    title: Team Types Within the Context of Services Frameworks — Version 1.2
     publisher: FIRST
     source_type: institutional_framework
     tier: 2
@@ -296,7 +296,7 @@ sources:
     url: https://docs.hackerone.com/en/articles/8494525-gold-standard-safe-harbor-statement
     language: en
     last_reviewed: "2026-09-15"
-    supports: [authorised_testing, ethical_hacker, bug_bounty]
+    supports: [authorised_testing, bug_bounty]
     note_en: Example of policy language treating compliant good-faith research as authorised within stated limits.
     note_lv: Politikas teksta piemērs, kas noteikumiem atbilstošu labticīgu pētniecību noteiktās robežās atzīst par autorizētu.
 

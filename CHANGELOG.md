@@ -4,6 +4,12 @@ All notable changes are recorded here. The project follows [Semantic Versioning]
 
 ## [Unreleased]
 
+- Narrowed terminology claims to what their registered sources support.
+- Removed absolute VDP authorisation language and added issuer-authority, third-party, contract, and applicable-law limits.
+- Reframed the incident-update list as an editorial rather than compliance checklist.
+- Strengthened safeguards against applying editorial metaphors to identifiable parties.
+- Added semantic claim-to-source cross-reference validation and regression coverage.
+
 ## [0.2.0] — 2026-09-16
 
 - Added claim-level evidence records with exact source locators and support types.

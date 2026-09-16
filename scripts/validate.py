@@ -79,6 +79,23 @@ def unique_ids(items: list[dict], label: str) -> list[str]:
     return errors
 
 
+def validate_claim_source_fit(claims: list[dict], sources: list[dict]) -> list[str]:
+    """Require every citation to support at least one term asserted by its claim."""
+    errors: list[str] = []
+    source_to_terms = {item["id"]: set(item["supports"]) for item in sources}
+    for claim in claims:
+        claim_terms = set(claim["term_ids"])
+        for citation in claim["citations"]:
+            source_id = citation["source_id"]
+            supported_terms = source_to_terms.get(source_id)
+            if supported_terms is not None and claim_terms.isdisjoint(supported_terms):
+                errors.append(
+                    f"claim/source mismatch: {claim['id']} cites {source_id} "
+                    "without a supported claim term"
+                )
+    return errors
+
+
 def validate_schema(data_path: Path, schema_path: Path) -> list[str]:
     data = load_yaml(data_path)
     schema = load_json(schema_path)
@@ -166,6 +183,8 @@ def validate_cross_references() -> list[str]:
                 f"claim {claim['id']} has unknown source ids: "
                 + ", ".join(sorted(missing_sources))
             )
+
+    errors.extend(validate_claim_source_fit(claims, sources))
 
     return errors
 

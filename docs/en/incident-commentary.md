@@ -20,7 +20,9 @@ Public communication can help society, customers, and defenders. It can also bec
 
 The [NCSC incident-communications guidance](https://www.ncsc.gov.uk/guidance/effective-communications-in-a-cyber-incident) advises against speculation and premature conclusions, and against prejudicing regulatory or law-enforcement investigations.
 
-## Safe minimum for a public update
+## Editorial checklist for a public update
+
+This is a communication checklist, not a legal or regulatory compliance checklist. The responsible organisation must separately assess duties to notify its CSIRT or competent authority, regulators, contractual partners, affected people, and other required recipients.
 
 1. What is confirmed now?
 2. What remains unknown?
@@ -30,6 +32,6 @@ The [NCSC incident-communications guidance](https://www.ncsc.gov.uk/guidance/eff
 
 ## The “Red Cap Team” boundary
 
-In this project, *Red Cap Team* is an explicitly labelled editorial metaphor for a commentator who borrows a practitioner's visual or rhetorical authority. It is not an industry term and should not be used to defame a particular person.
+In this project, *Red Cap Team* is an explicitly labelled editorial metaphor for a commentator who borrows a practitioner's visual or rhetorical authority. It is not an industry term. Do not attach it to a named or reasonably identifiable person or organisation without documented facts, proportionate public-interest justification, a correction route, and appropriate editorial or legal review.
 
 The more precise approach is to criticise a specific behaviour: missing sources, presenting hypotheses as facts, disclosing sensitive detail, or failing to correct an error.

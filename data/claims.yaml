@@ -119,7 +119,7 @@ claims:
     citations:
       - source_id: rfc9116
         support_type: limits
-        locator: Section 5.5, Permission and Authorization
+        locator: Section 5.5, No Implied Permission for Testing
         jurisdiction: international_technical_guidance
         normative_status: ietf_informational_rfc
         retrieved: "2026-09-16"
@@ -163,7 +163,7 @@ claims:
     reviewer_role: maintainer
 
   - id: white_hat_is_not_scope
-    term_ids: [white_hat_hacker]
+    term_ids: [white_hat_hacker, authorised_testing]
     claim_type: authorization_boundary
     text_en: White hat is a recognised label for legitimate defensive testing, but the colour label does not itself prove permission for a specific target.
     text_lv: White hat ir atpazīstams apzīmējums likumīgai aizsardzības testēšanai, taču krāsas nosaukums pats nepierāda atļauju konkrētam mērķim.
@@ -173,6 +173,12 @@ claims:
         locator: Glossary entry
         jurisdiction: australia
         normative_status: national_cybersecurity_glossary
+        retrieved: "2026-09-16"
+      - source_id: nist_rules_of_engagement
+        support_type: limits
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
         retrieved: "2026-09-16"
     last_reviewed: "2026-09-16"
     reviewer_role: maintainer
@@ -195,8 +201,8 @@ claims:
   - id: incident_commentator_is_project_category
     term_ids: [public_commentator]
     claim_type: source_status
-    text_en: Cyber incident commentator is a project-defined descriptive category, not a standardised operational role.
-    text_lv: Kiberincidentu komentētājs ir projekta aprakstoša kategorija, ne standartizēta operacionāla loma.
+    text_en: Cyber incident commentator is a project-defined descriptive category, not a role defined by the cited NCSC guidance; that guidance supports only the communication-risk boundaries described by the project.
+    text_lv: Kiberincidentu komentētājs ir projekta aprakstoša kategorija, ne citētajās NCSC vadlīnijās definēta loma; vadlīnijas pamato tikai projektā aprakstītās komunikācijas riska robežas.
     citations:
       - source_id: ncsc_incident_comms
         support_type: supports

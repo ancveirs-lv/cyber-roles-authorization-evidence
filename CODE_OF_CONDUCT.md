@@ -16,7 +16,7 @@ Unacceptable behaviour includes:
 
 - publishing personal data or credentials;
 - encouraging unauthorised testing;
-- using the repository's editorial metaphors to target or harass a named person;
+- using the repository's editorial metaphors to target or harass a named or reasonably identifiable person or organisation;
 - knowingly presenting a community term as a legal or institutional standard;
 - repeated bad-faith disruption after a maintainer warning.
 

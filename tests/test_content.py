@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from scripts.configure_repository import configure, detect_current_owner
-from scripts.validate import run_all
+from scripts.validate import run_all, validate_claim_source_fit
 
 
 def test_repository_content_is_valid() -> None:
@@ -39,3 +39,18 @@ def test_repository_configuration_replaces_existing_owner(tmp_path: Path) -> Non
     for path in changed:
         assert "ancveirs-lv" not in path.read_text(encoding="utf-8")
         assert "example-owner" in path.read_text(encoding="utf-8")
+
+
+def test_claim_source_fit_rejects_unrelated_source() -> None:
+    claims = [
+        {
+            "id": "claim_one",
+            "term_ids": ["red_team"],
+            "citations": [{"source_id": "source_one"}],
+        }
+    ]
+    sources = [{"id": "source_one", "supports": ["blue_team"]}]
+
+    assert validate_claim_source_fit(claims, sources) == [
+        "claim/source mismatch: claim_one cites source_one without a supported claim term"
+    ]
