@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pytest
+
 from scripts.configure_repository import configure, detect_current_owner
 from scripts.validate import (
     run_all,
@@ -43,6 +45,44 @@ def test_repository_configuration_replaces_existing_owner(tmp_path: Path) -> Non
     for path in changed:
         assert "ancveirs-lv" not in path.read_text(encoding="utf-8")
         assert "example-owner" in path.read_text(encoding="utf-8")
+
+
+def test_repository_configuration_replaces_owner_across_repository(tmp_path: Path) -> None:
+    files = {
+        "mkdocs.yml": "repo_url: https://github.com/ancveirs-lv/cyber-roles-authorization-evidence\n",
+        ".github/CODEOWNERS": "* @ancveirs-lv\n",
+        "SECURITY.md": "https://github.com/ancveirs-lv/cyber-roles-authorization-evidence/security\n",
+        "schemas/terms.schema.json": '{"$id":"https://raw.githubusercontent.com/ancveirs-lv/repo/main/schema"}\n',
+        "docs/en/index.md": "https://github.com/ancveirs-lv/cyber-roles-authorization-evidence\n",
+        "scripts/example.py": 'OWNER = "ancveirs-lv"\n',
+    }
+    for relative, content in files.items():
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+
+    configure(tmp_path, "example-owner")
+
+    for relative in files:
+        text = (tmp_path / relative).read_text(encoding="utf-8")
+        assert "ancveirs-lv" not in text
+        assert "example-owner" in text
+
+
+@pytest.mark.parametrize(
+    "owner",
+    ["-starts-with-hyphen", "ends-with-hyphen-", "contains_underscore", "x" * 40],
+)
+def test_repository_configuration_rejects_invalid_owner(
+    tmp_path: Path, owner: str
+) -> None:
+    (tmp_path / "mkdocs.yml").write_text(
+        "repo_url: https://github.com/ancveirs-lv/cyber-roles-authorization-evidence\n",
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError):
+        configure(tmp_path, owner)
 
 
 def test_claim_source_fit_rejects_unrelated_source() -> None:
