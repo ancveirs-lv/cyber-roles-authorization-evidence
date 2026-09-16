@@ -233,3 +233,276 @@ claims:
         retrieved: "2026-09-16"
     last_reviewed: "2026-09-16"
     reviewer_role: maintainer
+
+  - id: cracker_is_historical_community_usage
+    term_ids: [cracker]
+    claim_type: usage
+    text_en: Cracker is recorded as a historical community term for defeating security controls; current professional reporting should describe the conduct rather than assume a universal label.
+    text_lv: Cracker ir dokumentēts kā vēsturisks kopienas termins drošības aizsardzības pārvarēšanai; mūsdienu profesionālajā komunikācijā jāapraksta rīcība, nevis jāpieņem universāla etiķete.
+    citations:
+      - source_id: rfc1392
+        support_type: historical_usage
+        locator: Cracker entry
+        jurisdiction: international_technical_history
+        normative_status: informational_rfc
+        retrieved: "2026-09-16"
+      - source_id: jargon_cracker
+        support_type: historical_usage
+        locator: Cracker entry
+        jurisdiction: hacker_culture
+        normative_status: community_primary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: threat_actor_is_not_a_professional_role
+    term_ids: [threat_actor]
+    claim_type: role_boundary
+    text_en: Threat actor identifies an individual or group associated with a cybersecurity threat; it is not a cybersecurity workforce role.
+    text_lv: Apdraudējuma aktors apzīmē personu vai grupu, kas saistīta ar kiberdrošības apdraudējumu; tā nav kiberdrošības darbaspēka loma.
+    citations:
+      - source_id: nist_threat_actor
+        support_type: defines
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: security_researcher_is_context_sensitive
+    term_ids: [security_researcher]
+    claim_type: usage
+    text_en: Formal cybersecurity-research work and vulnerability-finder activity overlap in ordinary language but can have different mandates and evidence access.
+    text_lv: Formāla kiberdrošības pētniecība un ievainojamības atradēja darbība ikdienas valodā pārklājas, taču tām var būt atšķirīgi mandāti un piekļuve pierādījumiem.
+    citations:
+      - source_id: enisa_ecsf
+        support_type: defines
+        locator: Cybersecurity Researcher role profile
+        jurisdiction: european_union
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+      - source_id: certcc_cvd
+        support_type: current_usage
+        locator: Finder terminology
+        jurisdiction: international_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: penetration_testing_is_scoped_assessment
+    term_ids: [penetration_tester]
+    claim_type: authorization_boundary
+    text_en: Penetration testing is a planned assessment whose permission and activity are bounded by scope and rules of engagement.
+    text_lv: Penetrācijas testēšana ir plānots novērtējums, kura atļauju un darbības ierobežo tvērums un iesaistes noteikumi.
+    citations:
+      - source_id: enisa_ecsf
+        support_type: defines
+        locator: Penetration Tester role profile
+        jurisdiction: european_union
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+      - source_id: nist_rules_of_engagement
+        support_type: limits
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: blue_team_scope_depends_on_context
+    term_ids: [blue_team]
+    claim_type: usage
+    text_en: Blue Team can mean the defensive side of an exercise or a broader set of defensive operational tasks; the applicable context must be stated.
+    text_lv: Blue Team var nozīmēt vingrinājuma aizsardzības pusi vai plašāku aizsardzības operacionālo uzdevumu kopumu; jānorāda piemērojamais konteksts.
+    citations:
+      - source_id: nist_blue_team
+        support_type: defines
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+      - source_id: eu_dora_tlpt
+        support_type: current_usage
+        locator: Article 2(4), blue team tasks
+        jurisdiction: european_union_financial_sector
+        normative_status: delegated_regulation
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: purple_teaming_is_collaborative_practice
+    term_ids: [purple_teaming]
+    claim_type: definition
+    text_en: Purple teaming is a collaborative offensive-defensive practice and does not by itself expand the authorised assessment scope.
+    text_lv: Purple teaming ir ofensīvās un aizsardzības puses sadarbības prakse, kas pati par sevi nepaplašina autorizētā novērtējuma tvērumu.
+    citations:
+      - source_id: mitre_red_teaming
+        support_type: supports
+        locator: Adversary emulation and red teaming guidance
+        jurisdiction: international_technical_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+      - source_id: eu_dora_tlpt
+        support_type: current_usage
+        locator: Provisions on purple teaming during TLPT
+        jurisdiction: european_union_financial_sector
+        normative_status: delegated_regulation
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: white_team_controls_exercise
+    term_ids: [white_team]
+    claim_type: role_boundary
+    text_en: White Team is an exercise-control and adjudication function, not a synonym for a white-hat hacker.
+    text_lv: White Team ir vingrinājuma kontroles un vērtēšanas funkcija, ne white-hat hakera sinonīms.
+    citations:
+      - source_id: nist_white_team
+        support_type: defines
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: incident_responder_has_operational_mandate
+    term_ids: [incident_responder]
+    claim_type: role_boundary
+    text_en: Incident response includes analysing, containing, eradicating, and recovering from incidents under an organisational mandate.
+    text_lv: Incidentu reaģēšana ietver incidentu analīzi, ierobežošanu, apdraudējuma izskaušanu un atjaunošanu organizācijas mandāta ietvarā.
+    citations:
+      - source_id: enisa_ecsf
+        support_type: defines
+        locator: Cyber Incident Responder role profile
+        jurisdiction: european_union
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+      - source_id: first_csirt_services
+        support_type: supports
+        locator: Incident Management service area
+        jurisdiction: international_guidance
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: digital_forensics_preserves_evidence
+    term_ids: [digital_forensics_investigator]
+    claim_type: definition
+    text_en: Digital-forensics work includes acquiring, preserving, analysing, and reporting digital evidence under documented methods and an applicable mandate.
+    text_lv: Digitālās kriminālistikas darbs ietver digitālo pierādījumu iegūšanu, saglabāšanu, analīzi un aprakstīšanu ar dokumentētām metodēm un piemērojamu mandātu.
+    citations:
+      - source_id: enisa_ecsf
+        support_type: defines
+        locator: Digital Forensics Investigator role profile
+        jurisdiction: european_union
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: cti_specialist_is_analytical_role
+    term_ids: [cyber_threat_intelligence_specialist]
+    claim_type: role_boundary
+    text_en: A cyber threat intelligence specialist collects, analyses, and communicates threat intelligence; the role does not itself authorise interaction with adversary infrastructure.
+    text_lv: Kiberdraudu izlūkošanas speciālists apkopo, analizē un komunicē draudu izlūkošanas informāciju; loma pati par sevi neatļauj mijiedarboties ar pretinieka infrastruktūru.
+    citations:
+      - source_id: enisa_ecsf
+        support_type: defines
+        locator: Cyber Threat Intelligence Specialist role profile
+        jurisdiction: european_union
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: soc_core_and_optional_services_differ
+    term_ids: [soc]
+    claim_type: definition
+    text_en: A SOC's core is monitoring, detection, and event analysis; triage, escalation, and response responsibilities depend on its mandate and service model.
+    text_lv: SOC kodols ir uzraudzība, atklāšana un notikumu analīze; triāžas, eskalācijas un reaģēšanas pienākumi ir atkarīgi no mandāta un pakalpojumu modeļa.
+    citations:
+      - source_id: first_team_types
+        support_type: defines
+        locator: Sections 3.4.1–3.4.3
+        jurisdiction: international_guidance
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: csirt_serves_defined_constituency
+    term_ids: [csirt]
+    claim_type: definition
+    text_en: A CSIRT provides incident-related services for a defined constituency under a stated mandate.
+    text_lv: CSIRT sniedz ar incidentiem saistītus pakalpojumus noteiktai klientūrai saskaņā ar definētu mandātu.
+    citations:
+      - source_id: first_team_types
+        support_type: defines
+        locator: CSIRT team type
+        jurisdiction: international_guidance
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+      - source_id: first_csirt_services
+        support_type: supports
+        locator: CSIRT Services Framework overview
+        jurisdiction: international_guidance
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: psirt_coordinates_product_security
+    term_ids: [psirt]
+    claim_type: definition
+    text_en: A PSIRT coordinates product-vulnerability intake, assessment, remediation, and disclosure with responsible product functions.
+    text_lv: PSIRT kopā ar atbildīgajām produktu funkcijām koordinē produktu ievainojamību saņemšanu, novērtēšanu, labošanu un publiskošanu.
+    citations:
+      - source_id: first_psirt_services
+        support_type: defines
+        locator: PSIRT Services Framework overview
+        jurisdiction: international_guidance
+        normative_status: institutional_framework
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: full_disclosure_precedes_remediation
+    term_ids: [full_disclosure]
+    claim_type: usage
+    text_en: Full disclosure denotes public release of vulnerability detail before remediation is available; publication detail and timing vary by practice.
+    text_lv: Full disclosure apzīmē ievainojamības detaļu publiskošanu pirms labojuma pieejamības; publicēšanas detaļas un laiks praksē atšķiras.
+    citations:
+      - source_id: first_cvd
+        support_type: defines
+        locator: Disclosure terminology and approaches
+        jurisdiction: international_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+      - source_id: rfpolicy
+        support_type: historical_usage
+        locator: Full Disclosure Policy text
+        jurisdiction: hacker_culture
+        normative_status: community_primary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: script_kiddie_is_pejorative_jargon
+    term_ids: [script_kiddie]
+    claim_type: usage
+    text_en: Script kiddie or skid is pejorative community jargon about perceived tool use and skill; it does not determine authorisation or legal status.
+    text_lv: Script kiddie jeb skid ir noniecinošs kopienas žargons par uztverto rīku lietojumu un prasmēm; tas nenosaka atļauju vai juridisko statusu.
+    citations:
+      - source_id: giac_script_kiddie
+        support_type: historical_usage
+        locator: Paper title and introductory definition
+        jurisdiction: professional_training_archive
+        normative_status: secondary_historical_source
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
