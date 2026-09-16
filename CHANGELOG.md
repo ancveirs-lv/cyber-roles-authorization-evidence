@@ -10,6 +10,9 @@ All notable changes are recorded here. The project follows [Semantic Versioning]
 - Strengthened safeguards against applying editorial metaphors to identifiable parties.
 - Added semantic claim-to-source cross-reference validation and regression coverage.
 - Added claim-level coverage for all 29 canonical term records and a build gate that rejects uncovered terms.
+- Made repository-owner configuration cover all tracked text configuration and documentation locations.
+- Derived built-site verification URLs from `mkdocs.yml` instead of a hard-coded GitHub owner.
+- Added fork-portability and invalid-owner regression tests.
 
 ## [0.2.0] — 2026-09-16
 

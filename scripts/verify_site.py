@@ -9,10 +9,22 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin
 
+import yaml
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
-BASE_URL = "https://ancveirs-lv.github.io/cyber-roles-authorization-evidence/"
+
+
+def configured_base_url() -> str:
+    config = yaml.safe_load((ROOT / "mkdocs.yml").read_text(encoding="utf-8"))
+    value = config.get("site_url") if isinstance(config, dict) else None
+    if not isinstance(value, str) or not value.startswith("https://"):
+        raise ValueError("mkdocs.yml must define an absolute HTTPS site_url")
+    return value.rstrip("/") + "/"
+
+
+BASE_URL = configured_base_url()
 PAGES = (
     "index",
     "terminology",

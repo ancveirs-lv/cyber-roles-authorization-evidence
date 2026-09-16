@@ -9,15 +9,10 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGETS = (
-    "README.md",
-    "README.lv.md",
-    "INSTALL.md",
-    "INSTALL.lv.md",
-    "mkdocs.yml",
-    "CITATION.cff",
-)
 PLACEHOLDERS = ("YOUR-USERNAME", "TAVS-LIETOTAJVARDS")
+TEXT_SUFFIXES = {".cff", ".json", ".md", ".py", ".txt", ".yaml", ".yml"}
+TEXT_FILENAMES = {"CODEOWNERS"}
+EXCLUDED_PARTS = {".git", ".venv", "site", "__pycache__"}
 VALID_OWNER = re.compile(r"^(?!-)[A-Za-z0-9-]{1,39}(?<!-)$")
 REPOSITORY_OWNER = re.compile(
     r"github\.com/(?P<owner>[A-Za-z0-9-]{1,39})/cyber-roles-authorization-evidence"
@@ -28,6 +23,20 @@ def detect_current_owner(root: Path) -> str | None:
     """Read the currently configured owner from mkdocs.yml."""
     match = REPOSITORY_OWNER.search((root / "mkdocs.yml").read_text(encoding="utf-8"))
     return match.group("owner") if match else None
+
+
+def configurable_files(root: Path) -> list[Path]:
+    """Return repository text files that may contain owner-specific references."""
+    files: list[Path] = []
+    for path in root.rglob("*"):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(root)
+        if any(part in EXCLUDED_PARTS or part.startswith(".venv") for part in relative.parts):
+            continue
+        if path.suffix.lower() in TEXT_SUFFIXES or path.name in TEXT_FILENAMES:
+            files.append(path)
+    return sorted(files)
 
 
 def configure(
@@ -48,8 +57,7 @@ def configure(
         replacements.add(owner_to_replace)
 
     changed: list[Path] = []
-    for relative in TARGETS:
-        path = root / relative
+    for path in configurable_files(root):
         original = path.read_text(encoding="utf-8")
         updated = original
         for value in replacements:
