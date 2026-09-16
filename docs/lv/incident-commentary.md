@@ -20,7 +20,9 @@ Publiska komunikācija var palīdzēt sabiedrībai, klientiem un aizstāvjiem. T
 
 [NCSC incidentu komunikācijas vadlīnijas](https://www.ncsc.gov.uk/guidance/effective-communications-in-a-cyber-incident) iesaka izvairīties no spekulācijām un priekšlaicīgiem secinājumiem, kā arī neapdraudēt regulatoru vai tiesībaizsardzības izmeklēšanu.
 
-## Drošs publiskā atjauninājuma minimums
+## Publiska atjauninājuma redakcionālais kontrolsaraksts
+
+Šis ir komunikācijas, ne juridiskās vai regulatorās atbilstības kontrolsaraksts. Atbildīgajai organizācijai atsevišķi jāizvērtē pienākumi ziņot CSIRT vai kompetentajai iestādei, regulatoriem, līgumpartneriem, ietekmētajām personām un citiem obligātajiem saņēmējiem.
 
 1. Kas ir apstiprināts šobrīd?
 2. Kas vēl nav zināms?
@@ -30,6 +32,6 @@ Publiska komunikācija var palīdzēt sabiedrībai, klientiem un aizstāvjiem. T
 
 ## “Red Cap Team” robeža
 
-*Red Cap Team* šajā projektā ir skaidri marķēta autora metafora komentētājam, kas aizņemas praktizētāja vizuālo vai retorisko autoritāti. Tas nav nozares termins un nav etiķete konkrēta cilvēka nomelnošanai.
+*Red Cap Team* šajā projektā ir skaidri marķēta autora metafora komentētājam, kas aizņemas praktizētāja vizuālo vai retorisko autoritāti. Tas nav nozares termins. To nedrīkst sasaistīt ar nosauktu vai saprātīgi identificējamu personu vai organizāciju bez dokumentētiem faktiem, samērīga sabiedrības interešu pamatojuma, labošanas ceļa un atbilstošas redakcionālas vai juridiskas pārbaudes.
 
 Precīzāk ir kritizēt konkrētu rīcību: avotu nenorādīšanu, hipotēzes pasniegšanu kā faktu, sensitīvu detaļu atklāšanu vai kļūdas neizlabošanu.

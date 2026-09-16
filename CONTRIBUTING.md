@@ -44,7 +44,8 @@ Author-created expressions belong in `data/editorial_metaphors.yaml`, not `data/
 
 - Do not present this project as legal advice.
 - Tie legal claims to a jurisdiction and source.
-- Do not accuse a named person or organisation based on style, clothing, follower count, or self-description.
+- Do not use an editorial metaphor to target a named or reasonably identifiable person or organisation based on style, clothing, follower count, self-description, workplace, imagery, or a recognisable incident.
+- Claims about identifiable parties require documented facts, a fact/opinion distinction, proportionate public-interest justification, a correction route, and appropriate editorial or legal review.
 - Critique documented claims and conduct with proportionate evidence.
 - Do not submit secrets, personal data, exploit code targeting a live third party, or incident-sensitive artefacts.
 
