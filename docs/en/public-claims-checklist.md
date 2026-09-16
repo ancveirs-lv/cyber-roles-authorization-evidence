@@ -1,3 +1,8 @@
+---
+title: Evaluating public cybersecurity claims
+description: A checklist for distinguishing direct observation, party statements, corroborated findings, inference, hypothesis and opinion.
+---
+
 # Evaluating public claims
 
 Use this checklist before sharing a video, interview, post, or “rapid incident analysis”.
@@ -14,11 +19,14 @@ Use this checklist before sharing a video, interview, post, or “rapid incident
 
 | Label | Meaning | Example wording |
 |---|---|---|
-| Confirmed fact | Supported by an identifiable primary source or verifiable artefact | “The organisation confirmed service unavailability.” |
-| Source claim | What a party says, not yet independently verified | “The attacker claims to have obtained data; this is not independently confirmed.” |
-| Inference | A reasoned assessment based on available data | “The public timeline suggests that...” |
+| Directly observed | Recorded in a verifiable artefact or observed through a stated method | “The public service returned HTTP 503 at 14:32 UTC; the response was preserved.” |
+| Party statement | What an organisation, authority, researcher, or attacker says; primary evidence of the statement, not necessarily of the event | “The organisation reports service unavailability; no independent telemetry is available.” |
+| Corroborated finding | Supported by independent evidence or multiple sources whose access and methods are stated | “Status data and two independent measurements show the outage began before 14:30 UTC.” |
+| Inference | A reasoned assessment whose supporting observations and alternatives are disclosed | “The public timeline suggests that...” |
 | Hypothesis | A testable but unconfirmed explanation | “One possibility is..., but log evidence is unavailable.” |
 | Opinion | A personal or normative judgement | “In my view, the communication was late.” |
+
+A primary source is not automatically a confirmed fact. It may be authoritative evidence of what that party said while the underlying technical claim still requires corroboration.
 
 ## Warning signs
 

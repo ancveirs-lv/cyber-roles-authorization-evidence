@@ -8,9 +8,13 @@ Only the latest release and the current `main` branch are maintained.
 
 ## Reporting a repository vulnerability
 
-Use GitHub's **Private vulnerability reporting** feature if it is enabled for the repository. Do not open a public issue for a vulnerability that could affect users of the build workflow.
+Use GitHub **Private vulnerability reporting**:
 
-If private reporting is unavailable, contact the repository owner through the security contact listed in the published repository profile. Replace this paragraph with a dedicated security email before public launch.
+<https://github.com/ancveirs-lv/cyber-roles-authorization-evidence/security/advisories/new>
+
+Do not open a public issue for a vulnerability that could affect users of the build or publication workflow. If the private form is unavailable, do not disclose the report publicly; notify the repository owner through the contact route on the [owner profile](https://github.com/ancveirs-lv) and ask for a private reporting channel.
+
+Receipt is normally acknowledged within five working days. A remediation or coordination timeline depends on impact and reproducibility.
 
 Include:
 

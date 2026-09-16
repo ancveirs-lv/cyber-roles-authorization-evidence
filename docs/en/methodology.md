@@ -1,3 +1,8 @@
+---
+title: Terminology and evidence methodology
+description: Source hierarchy, term statuses, change rules and legal cautions used by this bilingual cybersecurity reference.
+---
+
 # Methodology
 
 ## Source hierarchy
@@ -15,6 +20,8 @@
 - `established` — an established professional or technical concept;
 - `established_with_context` — recognised, but with boundaries that vary between frameworks;
 - `historical_or_community_jargon` — authentic, but neither formal nor universal;
+- `common_but_contested` — still common, but its framing or boundaries are disputed;
+- `project_descriptive_category` — an explicit project-defined analytical category, not an industry role;
 - `avoid_as_canonical` — found in use, but too inconsistent for the canonical glossary;
 - `editorial_metaphor` — author-created imagery stored separately from the terminology dataset.
 
@@ -34,4 +41,4 @@ A negative finding — for example, “the term does not appear in the reviewed 
 
 Legal conclusions must be tied to a jurisdiction and policy text. The general principle “good intent is not automatic permission” is sound, but a specific VDP or CVD programme may explicitly authorise policy-compliant testing within its scope.
 
-Structured sources are in `data/sources.yaml`; term records are in `data/terms.yaml`.
+Structured sources are in `data/sources.yaml`; term records are in `data/terms.yaml`; claim-level citations and locators are in `data/claims.yaml`. The coarse `source.supports` relation is a navigation aid, not proof that a source supports every field in a term record.

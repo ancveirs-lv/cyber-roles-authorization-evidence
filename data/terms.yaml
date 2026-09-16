@@ -1,4 +1,4 @@
-schema_version: 1
+schema_version: 2
 terms:
   - id: hacker
     label_en: Hacker
@@ -9,9 +9,9 @@ terms:
     definition_lv: Plašs kultūras vai tehnisks apzīmējums, kura nozīme atkarībā no avota un konteksta svārstās no zinātkāra, prasmīga sistēmu pētnieka līdz neatļautam lietotājam.
     authorization_note_en: The label alone establishes no permission to test a system.
     authorization_note_lv: Apzīmējums pats par sevi nedod atļauju testēt sistēmu.
-    not_equivalent_to: [attacker, penetration_tester]
-    source_ids: [rfc1392, nist_hacker, jargon_hacker]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [attacker, penetration_tester]
+    source_ids: [rfc1392, nist_hacker, jargon_hacker, ccc_hacker_ethics]
+    last_reviewed: "2026-09-16"
 
   - id: cracker
     label_en: Cracker
@@ -22,7 +22,7 @@ terms:
     definition_lv: Vēsturisks kopienas termins personai, kas pārvar drošības aizsardzību; dažkārt lietots arī programmatūras aizsardzības apiešanai.
     authorization_note_en: The term does not determine authorization; describe the actual conduct.
     authorization_note_lv: Termins nenosaka pilnvarojumu; jāapraksta faktiskā rīcība.
-    not_equivalent_to: [hacker, threat_actor]
+    not_synonymous_with: [hacker, threat_actor]
     source_ids: [rfc1392, jargon_cracker]
     last_reviewed: "2026-09-15"
 
@@ -31,13 +31,13 @@ terms:
     label_lv: Uzbrucējs
     domain: actor_identity
     status: established
-    definition_en: A person, group, or process performing actions intended to compromise security properties or cause harm.
-    definition_lv: Persona, grupa vai process, kas veic darbības drošības īpašību kompromitēšanai vai kaitējuma radīšanai.
+    definition_en: A person attempting to exploit vulnerabilities or otherwise compromise a system's security.
+    definition_lv: Persona, kas mēģina izmantot ievainojamības vai citādi kompromitēt sistēmas drošību.
     authorization_note_en: In ordinary use, attack activity is adversarial; authorised simulation should be stated explicitly.
     authorization_note_lv: Parastā lietojumā uzbrukuma darbība ir pretinieka rīcība; autorizēta imitācija jānorāda atsevišķi.
-    not_equivalent_to: [security_researcher, red_team]
-    source_ids: [nist_glossary]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [security_researcher, red_team]
+    source_ids: [nist_attacker]
+    last_reviewed: "2026-09-16"
 
   - id: threat_actor
     label_en: Threat actor
@@ -48,9 +48,9 @@ terms:
     definition_lv: Persona vai grupa, kas saistīta ar darbībām, kuras rada kiberdrošības apdraudējumu.
     authorization_note_en: Attribution to a named actor requires evidence and a stated confidence level.
     authorization_note_lv: Piesaistei konkrētam aktoram vajadzīgi pierādījumi un norādīts pārliecības līmenis.
-    not_equivalent_to: [hacker, hacktivist]
-    source_ids: [nist_glossary, enisa_ecsf]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [hacker, hacktivist]
+    source_ids: [nist_threat_actor]
+    last_reviewed: "2026-09-16"
 
   - id: security_researcher
     label_en: Security researcher
@@ -61,9 +61,9 @@ terms:
     definition_lv: Persona, kas pēta drošības īpašības, trūkumus, ievainojamības vai aizsardzības metodes.
     authorization_note_en: The role title does not itself authorize testing a particular third-party system.
     authorization_note_lv: Lomas nosaukums pats par sevi neatļauj testēt konkrētu trešās personas sistēmu.
-    not_equivalent_to: [penetration_tester, incident_responder]
-    source_ids: [enisa_ecsf, certcc_cvd]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [penetration_tester, incident_responder]
+    source_ids: [certcc_cvd, ccc_hacker_ethics]
+    last_reviewed: "2026-09-16"
 
   - id: ethical_hacker
     label_en: Ethical hacker
@@ -74,7 +74,7 @@ terms:
     definition_lv: Plaši atpazīstams apzīmējums drošības testēšanai vai pētniecībai ar mērķi uzlabot drošību; ENISA to min kā alternatīvu nosaukumu penetrācijas testēšanas profilā.
     authorization_note_en: Ethical intent is not a substitute for scope, rules, and legal authorization.
     authorization_note_lv: Ētisks nolūks neaizstāj tvērumu, noteikumus un juridisku pilnvarojumu.
-    not_equivalent_to: [authorised_testing, penetration_tester]
+    not_synonymous_with: [authorised_testing]
     source_ids: [enisa_ecsf, hackerone_safe_harbor]
     last_reviewed: "2026-09-15"
 
@@ -87,8 +87,8 @@ terms:
     definition_lv: Speciālists, kurš veic plānotu drošības pārbaudi noteiktā tehniskā tvērumā un saskaņā ar iesaistes noteikumiem.
     authorization_note_en: Authorization normally derives from a contract, statement of work, and rules of engagement.
     authorization_note_lv: Pilnvarojums parasti izriet no līguma, darba uzdevuma un iesaistes noteikumiem.
-    not_equivalent_to: [red_team, bug_bounty]
-    source_ids: [enisa_ecsf, nist_rules_of_engagement]
+    not_synonymous_with: [red_team, bug_bounty]
+    source_ids: [enisa_ecsf, nist_rules_of_engagement, crest_red_teaming, eu_dora_tlpt]
     last_reviewed: "2026-09-15"
 
   - id: authorised_testing
@@ -100,7 +100,7 @@ terms:
     definition_lv: Drošības testēšana ar atļauju, kas nosaka mērķi, laiku, metodes, ierobežojumus, ziņošanas ceļu un atbildīgās puses.
     authorization_note_en: Authorization is bounded; activity outside the stated scope is not covered automatically.
     authorization_note_lv: Pilnvarojums ir ierobežots; darbība ārpus noteiktā tvēruma netiek automātiski aptverta.
-    not_equivalent_to: [ethical_hacker, security_researcher]
+    not_synonymous_with: [ethical_hacker, security_researcher]
     source_ids: [nist_rules_of_engagement, hackerone_safe_harbor]
     last_reviewed: "2026-09-15"
 
@@ -113,8 +113,8 @@ terms:
     definition_lv: Autorizēta grupa, kas imitē pretinieka spējas, lai novērtētu organizācijas novēršanas, atklāšanas un reaģēšanas spējas.
     authorization_note_en: The activity is bounded by objectives, scope, and rules of engagement.
     authorization_note_lv: Darbību ierobežo mērķi, tvērums un iesaistes noteikumi.
-    not_equivalent_to: [penetration_tester, attacker]
-    source_ids: [nist_red_team, mitre_red_teaming, crest_red_teaming]
+    not_synonymous_with: [penetration_tester, attacker]
+    source_ids: [nist_red_team, nist_rules_of_engagement, mitre_red_teaming, crest_red_teaming, eu_dora_tlpt]
     last_reviewed: "2026-09-15"
 
   - id: blue_team
@@ -126,9 +126,9 @@ terms:
     definition_lv: Aizsardzības funkcija, kas uztur drošību, uzrauga sistēmas, atklāj un analizē darbības un reaģē uz apdraudējumiem.
     authorization_note_en: Exact responsibilities vary between organisations and may overlap SOC, CSIRT, IR, and engineering.
     authorization_note_lv: Precīzie pienākumi organizācijās atšķiras un var pārklāties ar SOC, CSIRT, incidentu reaģēšanu un inženieriju.
-    not_equivalent_to: [soc, csirt]
-    source_ids: [nist_blue_team, enisa_ecsf]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [soc, csirt]
+    source_ids: [nist_blue_team]
+    last_reviewed: "2026-09-16"
 
   - id: purple_teaming
     label_en: Purple teaming
@@ -139,7 +139,7 @@ terms:
     definition_lv: Sadarbības prakse, kurā ofensīvie paņēmieni un aizsardzības novērojumi tiek savienoti, lai uzlabotu atklāšanu un reaģēšanu.
     authorization_note_en: It may be a mode of work or a formal team; neither form expands the authorised test scope.
     authorization_note_lv: Tā var būt darba metode vai formāla komanda; neviena forma nepaplašina autorizēto testa tvērumu.
-    not_equivalent_to: [red_team, blue_team]
+    not_synonymous_with: [red_team, blue_team]
     source_ids: [mitre_red_teaming, eu_dora_tlpt]
     last_reviewed: "2026-09-15"
 
@@ -152,7 +152,7 @@ terms:
     definition_lv: Vingrinājuma kontroles funkcija, kas uzrauga noteikumus, koordinē drošību, novēro darbības un vērtē rezultātus.
     authorization_note_en: The White Team governs an exercise; it is not the same as a white-hat hacker.
     authorization_note_lv: White Team pārvalda vingrinājumu; tas nav tas pats, kas white-hat hacker.
-    not_equivalent_to: [white_hat_hacker]
+    not_synonymous_with: [white_hat_hacker]
     source_ids: [nist_white_team]
     last_reviewed: "2026-09-15"
 
@@ -165,7 +165,7 @@ terms:
     definition_lv: Speciālists, kurš analizē un ierobežo kiberincidentus, izskauž apdraudējumu un atbalsta atjaunošanu.
     authorization_note_en: Access and actions derive from the organisation's incident-management mandate and procedures.
     authorization_note_lv: Piekļuve un rīcība izriet no organizācijas incidentu vadības mandāta un procedūrām.
-    not_equivalent_to: [digital_forensics_investigator, public_commentator]
+    not_synonymous_with: [digital_forensics_investigator, public_commentator]
     source_ids: [enisa_ecsf, first_csirt_services]
     last_reviewed: "2026-09-15"
 
@@ -178,7 +178,7 @@ terms:
     definition_lv: Speciālists, kurš ar dokumentētām metodēm iegūst, saglabā, analizē un apraksta digitālos pierādījumus.
     authorization_note_en: The mandate, evidence handling, and legal context determine permitted actions.
     authorization_note_lv: Atļauto rīcību nosaka mandāts, pierādījumu apstrāde un juridiskais konteksts.
-    not_equivalent_to: [incident_responder, security_researcher]
+    not_synonymous_with: [incident_responder, security_researcher]
     source_ids: [enisa_ecsf]
     last_reviewed: "2026-09-15"
 
@@ -191,7 +191,7 @@ terms:
     definition_lv: Speciālists, kurš apkopo, novērtē un komunicē informāciju par kiberdraudiem, norādot avotus un pārliecības līmeni.
     authorization_note_en: Intelligence assessment does not itself authorise interaction with an adversary's infrastructure.
     authorization_note_lv: Izlūkošanas novērtējums pats par sevi neatļauj mijiedarboties ar pretinieka infrastruktūru.
-    not_equivalent_to: [incident_responder, public_commentator]
+    not_synonymous_with: [incident_responder, public_commentator]
     source_ids: [enisa_ecsf]
     last_reviewed: "2026-09-15"
 
@@ -204,7 +204,7 @@ terms:
     definition_lv: Spēja, kuras kodols ir monitorings, atklāšana, notikumu analīze, triāža un eskalācija; organizatoriskais tvērums atšķiras.
     authorization_note_en: SOC staff act under organisational responsibilities and access controls.
     authorization_note_lv: SOC darbinieki rīkojas organizācijas pienākumu un piekļuves kontroļu ietvarā.
-    not_equivalent_to: [blue_team, csirt]
+    not_synonymous_with: [blue_team, csirt]
     source_ids: [first_team_types]
     last_reviewed: "2026-09-15"
 
@@ -217,7 +217,7 @@ terms:
     definition_lv: Komanda, kas noteiktai klientūrai nodrošina drošības incidentu saņemšanu, analīzi, koordinēšanu, mazināšanu un atjaunošanu.
     authorization_note_en: Authority and constituency are defined by the team's mandate.
     authorization_note_lv: Pilnvaras un klientūru nosaka komandas mandāts.
-    not_equivalent_to: [soc, psirt]
+    not_synonymous_with: [soc, psirt]
     source_ids: [first_team_types, first_csirt_services]
     last_reviewed: "2026-09-15"
 
@@ -226,13 +226,13 @@ terms:
     label_lv: Produktu drošības incidentu reaģēšanas komanda (PSIRT)
     domain: organisational_function
     status: established
-    definition_en: A team responsible for receiving, analysing, coordinating, remediating, and disclosing vulnerabilities affecting an organisation's products.
-    definition_lv: Komanda, kas saņem, analizē, koordinē, novērš un publisko ievainojamības organizācijas produktos.
+    definition_en: A team that receives and assesses product-vulnerability reports and coordinates disposition, remediation, and disclosure with the responsible product functions.
+    definition_lv: Komanda, kas saņem un novērtē produktu ievainojamību ziņojumus un kopā ar atbildīgajām produktu funkcijām koordinē lēmumu, labošanu un publiskošanu.
     authorization_note_en: Its mandate concerns the organisation's products and coordinated product-security process.
     authorization_note_lv: Tās mandāts attiecas uz organizācijas produktiem un koordinētu produktu drošības procesu.
-    not_equivalent_to: [csirt, cvd]
+    not_synonymous_with: [csirt, cvd]
     source_ids: [first_team_types, first_psirt_services]
-    last_reviewed: "2026-09-15"
+    last_reviewed: "2026-09-16"
 
   - id: cvd
     label_en: Coordinated Vulnerability Disclosure (CVD)
@@ -243,11 +243,11 @@ terms:
     definition_lv: Process ievainojamības informācijas saņemšanai, analīzei, koordinēšanai, novēršanai vai mazināšanai un publiskošanai starp iesaistītajām pusēm.
     authorization_note_en: CVD is not universal permission to test; a specific programme may define authorised in-scope research.
     authorization_note_lv: CVD nav universāla testēšanas atļauja; konkrēta programma var noteikt autorizētu pētniecību savā tvērumā.
-    not_equivalent_to: [vdp, bug_bounty, penetration_tester]
-    source_ids: [certcc_cvd, first_cvd, certlv_cvd, iso_29147]
+    not_synonymous_with: [vulnerability_disclosure_policy, vulnerability_disclosure_program, bug_bounty, penetration_tester]
+    source_ids: [certcc_cvd, first_cvd, first_psirt_services, certlv_cvd, iso_29147]
     last_reviewed: "2026-09-15"
 
-  - id: vdp
+  - id: vulnerability_disclosure_policy
     label_en: Vulnerability Disclosure Policy (VDP)
     label_lv: Ievainojamību atklāšanas politika (VDP)
     domain: vulnerability_process
@@ -256,20 +256,33 @@ terms:
     definition_lv: Organizācijas publiska politika, kas apraksta ziņošanas kanālus, tvērumu, sagaidāmo pētnieka rīcību, ziņojumu apstrādi un bieži arī drošā patvēruma nosacījumus.
     authorization_note_en: Only the policy text determines whether and how testing is authorised.
     authorization_note_lv: Tikai politikas teksts nosaka, vai un kā testēšana ir atļauta.
-    not_equivalent_to: [cvd, bug_bounty, security_txt]
-    source_ids: [cisa_bod_20_01, certcc_cvd]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [cvd, vulnerability_disclosure_program, bug_bounty, security_txt]
+    source_ids: [cisa_bod_20_01, rfc9116]
+    last_reviewed: "2026-09-16"
+
+  - id: vulnerability_disclosure_program
+    label_en: Vulnerability Disclosure Program (VDP)
+    label_lv: Ievainojamību atklāšanas programma (VDP)
+    domain: vulnerability_process
+    status: established_with_context
+    definition_en: An organisational capability for receiving, triaging, coordinating, remediating, and communicating vulnerability reports; its policy is one component of the programme.
+    definition_lv: Organizācijas spēja saņemt, izvērtēt, koordinēt, novērst un komunicēt ievainojamību ziņojumus; politika ir viena programmas daļa.
+    authorization_note_en: A programme may publish an authorization or safe-harbour commitment, but only its actual policy text defines those boundaries.
+    authorization_note_lv: Programma var publicēt pilnvarojuma vai drošā patvēruma solījumu, taču robežas nosaka tikai tās faktiskais politikas teksts.
+    not_synonymous_with: [cvd, vulnerability_disclosure_policy, bug_bounty]
+    source_ids: [certcc_cvd, cisa_cvd_program]
+    last_reviewed: "2026-09-16"
 
   - id: security_txt
     label_en: security.txt
     label_lv: security.txt
     domain: vulnerability_process
     status: established
-    definition_en: A standardised text file that helps researchers locate an organisation's security contact and disclosure-policy information.
-    definition_lv: Standartizēts teksta fails, kas palīdz pētniekiem atrast organizācijas drošības kontaktu un ievainojamību politikas informāciju.
+    definition_en: An IETF-defined, machine-parsable text format that helps researchers locate an organisation's security contact and disclosure-policy information.
+    definition_lv: IETF definēts, mašīnlasāms teksta formāts, kas palīdz pētniekiem atrast organizācijas drošības kontaktu un ievainojamību politikas informāciju.
     authorization_note_en: The presence or absence of the file does not grant or revoke testing permission.
     authorization_note_lv: Faila esamība vai neesamība nedod un neatņem testēšanas atļauju.
-    not_equivalent_to: [vdp, cvd]
+    not_synonymous_with: [vulnerability_disclosure_policy, cvd]
     source_ids: [rfc9116]
     last_reviewed: "2026-09-15"
 
@@ -282,7 +295,7 @@ terms:
     definition_lv: Programma, kas aicina iesniegt noteikumiem atbilstošus ievainojamību ziņojumus un par kvalificējošiem atradumiem var piedāvāt finansiālu vai citu atlīdzību.
     authorization_note_en: Authorization and reward eligibility are bounded by programme scope and rules.
     authorization_note_lv: Pilnvarojumu un tiesības uz atlīdzību ierobežo programmas tvērums un noteikumi.
-    not_equivalent_to: [vdp, cvd, penetration_tester]
+    not_synonymous_with: [vulnerability_disclosure_policy, vulnerability_disclosure_program, cvd, penetration_tester]
     source_ids: [cisa_bod_20_01, certlv_cvd, hackerone_safe_harbor]
     last_reviewed: "2026-09-15"
 
@@ -290,12 +303,12 @@ terms:
     label_en: Responsible disclosure
     label_lv: Atbildīga ievainojamību atklāšana
     domain: vulnerability_process
-    status: historical_or_community_jargon
+    status: common_but_contested
     definition_en: A historical and still-used label for vulnerability reporting that often implies private notice before publication.
     definition_lv: Vēsturisks un joprojām lietots ievainojamību ziņošanas apzīmējums, kas bieži paredz privātu paziņošanu pirms publiskošanas.
     authorization_note_en: The label does not define testing permission, timing, or a complete coordination process.
     authorization_note_lv: Apzīmējums nenosaka testēšanas atļauju, termiņus vai pilnu koordinācijas procesu.
-    not_equivalent_to: [cvd]
+    not_synonymous_with: [cvd]
     source_ids: [certcc_cvd, first_cvd]
     last_reviewed: "2026-09-15"
 
@@ -308,7 +321,7 @@ terms:
     definition_lv: Pieeja, kurā publisko ievainojamības detaļas, dažkārt pirms labojuma; faktiskā prakse atšķiras.
     authorization_note_en: The term does not establish prior authorisation to discover or test the vulnerability.
     authorization_note_lv: Termins neapliecina iepriekšēju atļauju ievainojamības atrašanai vai testēšanai.
-    not_equivalent_to: [cvd, responsible_disclosure]
+    not_synonymous_with: [cvd, responsible_disclosure]
     source_ids: [rfpolicy]
     last_reviewed: "2026-09-15"
 
@@ -321,9 +334,9 @@ terms:
     definition_lv: Neformāls apzīmējums hakerim, kuru raksturo kā labticīgu vai autorizētu.
     authorization_note_en: The colour label is insufficient; the concrete scope and rules still control.
     authorization_note_lv: Ar krāsas apzīmējumu nepietiek; izšķirošs ir konkrētais tvērums un noteikumi.
-    not_equivalent_to: [white_team, ethical_hacker]
-    source_ids: [jargon_hacker, enisa_ecsf]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [white_team]
+    source_ids: [acsc_white_hat]
+    last_reviewed: "2026-09-16"
 
   - id: script_kiddie
     label_en: Script kiddie / skid
@@ -334,9 +347,9 @@ terms:
     definition_lv: Noniecinošs kopienas apzīmējums personai, kuru uzskata par gatavu rīku lietotāju bez pietiekamas izpratnes.
     authorization_note_en: Skill level does not determine whether activity is authorised.
     authorization_note_lv: Prasmju līmenis nenosaka, vai darbība ir atļauta.
-    not_equivalent_to: [attacker, penetration_tester]
-    source_ids: [jargon_hacker]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [attacker, penetration_tester]
+    source_ids: [giac_script_kiddie]
+    last_reviewed: "2026-09-16"
 
   - id: hacktivist
     label_en: Hacktivist
@@ -347,19 +360,19 @@ terms:
     definition_lv: Aktors, kas kiberaktivitāti saista ar politisku vai sociālu mērķi.
     authorization_note_en: Motivation does not establish legality, attribution, truthfulness, or proportionality.
     authorization_note_lv: Motivācija neapliecina darbības likumību, atribūciju, patiesumu vai samērīgumu.
-    not_equivalent_to: [threat_actor, security_researcher]
-    source_ids: [enisa_ecsf, nist_glossary]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [threat_actor, security_researcher]
+    source_ids: [enisa_threat_landscape_2025]
+    last_reviewed: "2026-09-16"
 
   - id: public_commentator
     label_en: Cyber incident commentator
     label_lv: Kiberincidentu komentētājs
     domain: communication_role
-    status: established_with_context
+    status: project_descriptive_category
     definition_en: A descriptive communication role for a person who publicly explains cyber incidents, often using public or secondary information.
     definition_lv: Aprakstoša komunikācijas loma personai, kas publiski skaidro kiberincidentus, bieži izmantojot publisku vai sekundāru informāciju.
     authorization_note_en: It is not a standard operational role and does not imply access to investigative evidence.
     authorization_note_lv: Tā nav standarta operacionāla loma un nenozīmē piekļuvi izmeklēšanas pierādījumiem.
-    not_equivalent_to: [incident_responder, cyber_threat_intelligence_specialist]
-    source_ids: [ncsc_incident_comms, enisa_ecsf]
-    last_reviewed: "2026-09-15"
+    not_synonymous_with: [incident_responder, cyber_threat_intelligence_specialist]
+    source_ids: [ncsc_incident_comms]
+    last_reviewed: "2026-09-16"

@@ -20,7 +20,7 @@ sources:
     url: https://www.rfc-editor.org/rfc/rfc9116.html
     language: en
     last_reviewed: "2026-09-15"
-    supports: [security_txt, vdp]
+    supports: [security_txt, vulnerability_disclosure_policy]
     note_en: Defines security.txt and explicitly separates contact discovery from authorization.
     note_lv: Definē security.txt un tieši nošķir kontakta atrašanu no autorizācijas.
 
@@ -60,17 +60,29 @@ sources:
     note_en: Current institutional usage differs from the positive Jargon File tradition.
     note_lv: Pašreizējais institucionālais lietojums atšķiras no pozitīvās Jargon File tradīcijas.
 
-  - id: nist_glossary
-    title: Computer Security Resource Center Glossary
+  - id: nist_attacker
+    title: Attacker — CSRC Glossary
     publisher: NIST
     source_type: institutional_glossary
     tier: 1
-    url: https://csrc.nist.gov/glossary/
+    url: https://csrc.nist.gov/glossary/term/attacker
     language: en
-    last_reviewed: "2026-09-15"
-    supports: [attacker, threat_actor, hacktivist]
-    note_en: Umbrella glossary used only where a more specific linked entry is not listed.
-    note_lv: Kopējā vārdnīca izmantota tikai tad, ja sarakstā nav konkrētākas saites.
+    last_reviewed: "2026-09-16"
+    supports: [attacker]
+    note_en: Direct glossary entry; it defines an attacker as an individual, not an automated process.
+    note_lv: Tiešs vārdnīcas ieraksts; uzbrucējs definēts kā persona, ne automatizēts process.
+
+  - id: nist_threat_actor
+    title: Threat Actor — CSRC Glossary
+    publisher: NIST
+    source_type: institutional_glossary
+    tier: 1
+    url: https://csrc.nist.gov/glossary/term/threat_actor
+    language: en
+    last_reviewed: "2026-09-16"
+    supports: [threat_actor]
+    note_en: Direct glossary entry for an individual or group posing a threat.
+    note_lv: Tiešs vārdnīcas ieraksts par personu vai grupu, kas rada apdraudējumu.
 
   - id: nist_red_team
     title: Red Team — CSRC Glossary
@@ -127,10 +139,22 @@ sources:
     tier: 1
     url: https://www.enisa.europa.eu/publications/european-cybersecurity-skills-framework-role-profiles
     language: en
-    last_reviewed: "2026-09-15"
-    supports: [security_researcher, ethical_hacker, penetration_tester, blue_team, incident_responder, digital_forensics_investigator, cyber_threat_intelligence_specialist, threat_actor, hacktivist, public_commentator, white_hat_hacker]
-    note_en: Used to distinguish roles by mission, tasks, knowledge, and outputs; some labels are alternative titles, not exact synonyms.
-    note_lv: Izmantots lomu nošķiršanai pēc misijas, uzdevumiem, zināšanām un rezultātiem; daži nosaukumi ir alternatīvi, ne identiski sinonīmi.
+    last_reviewed: "2026-09-16"
+    supports: [ethical_hacker, penetration_tester, incident_responder, digital_forensics_investigator, cyber_threat_intelligence_specialist]
+    note_en: Supports named ECSF role profiles and the Ethical Hacker alternative title under Penetration Tester; it is not used as a catch-all glossary.
+    note_lv: Pamato konkrētus ECSF lomu profilus un Ethical Hacker alternatīvo nosaukumu pie Penetration Tester; netiek lietots kā universāla vārdnīca.
+
+  - id: enisa_threat_landscape_2025
+    title: ENISA Threat Landscape 2025
+    publisher: ENISA
+    source_type: institutional_guidance
+    tier: 2
+    url: https://www.enisa.europa.eu/publications/enisa-threat-landscape-2025
+    language: en
+    last_reviewed: "2026-09-16"
+    supports: [hacktivist]
+    note_en: Evidence of current institutional usage of hacktivist as an actor-motivation label, not a workforce role.
+    note_lv: Pierādījums pašreizējam institucionālam hacktivist lietojumam kā aktora motivācijas apzīmējumam, ne profesijas lomai.
 
   - id: mitre_red_teaming
     title: Adversary Emulation and Red Teaming
@@ -164,7 +188,7 @@ sources:
     url: https://certcc.github.io/CERT-Guide-to-CVD/tutorials/terms/cvd/
     language: en
     last_reviewed: "2026-09-15"
-    supports: [security_researcher, cvd, vdp, responsible_disclosure]
+    supports: [security_researcher, cvd, vulnerability_disclosure_program, responsible_disclosure]
     note_en: Core process terminology and rationale for preferring CVD.
     note_lv: Procesa pamatterminoloģija un pamatojums CVD termina izvēlei.
 
@@ -200,9 +224,21 @@ sources:
     url: https://www.cisa.gov/news-events/directives/bod-20-01-develop-and-publish-vulnerability-disclosure-policy
     language: en
     last_reviewed: "2026-09-15"
-    supports: [vdp, bug_bounty]
+    supports: [vulnerability_disclosure_policy, bug_bounty]
     note_en: Explicitly distinguishes a VDP from a bug-bounty programme.
     note_lv: Tieši nošķir VDP no Bug Bounty programmas.
+
+  - id: cisa_cvd_program
+    title: Establishing a Coordinated Vulnerability Disclosure Program
+    publisher: CISA
+    source_type: institutional_guidance
+    tier: 2
+    url: https://www.cisa.gov/resources-tools/resources/establishing-coordinated-vulnerability-disclosure-program-work-security-researchers
+    language: en
+    last_reviewed: "2026-09-16"
+    supports: [vulnerability_disclosure_program]
+    note_en: Distinguishes the operational programme from the policy document and reporting channel.
+    note_lv: Nošķir operacionālu programmu no politikas dokumenta un ziņošanas kanāla.
 
   - id: ncsc_incident_comms
     title: Effective communications in a cyber incident
@@ -212,7 +248,7 @@ sources:
     url: https://www.ncsc.gov.uk/guidance/effective-communications-in-a-cyber-incident
     language: en
     last_reviewed: "2026-09-15"
-    supports: [public_commentator, incident_responder]
+    supports: [public_commentator]
     note_en: Supports avoiding speculation, premature conclusions, and prejudice to investigations.
     note_lv: Pamato izvairīšanos no spekulācijām, priekšlaicīgiem secinājumiem un izmeklēšanas apdraudēšanas.
 
@@ -272,9 +308,9 @@ sources:
     url: https://www.catb.org/jargon/html/H/hacker.html
     language: en
     last_reviewed: "2026-09-15"
-    supports: [hacker, white_hat_hacker, script_kiddie]
-    note_en: Historical community usage, not a legal or professional standard.
-    note_lv: Vēsturisks kopienas lietojums, ne juridisks vai profesionāls standarts.
+    supports: [hacker]
+    note_en: Historical community usage of hacker, not a legal or professional standard.
+    note_lv: Vēsturisks hacker kopienas lietojums, ne juridisks vai profesionāls standarts.
 
   - id: jargon_cracker
     title: Cracker — The Jargon File
@@ -300,6 +336,30 @@ sources:
     note_en: Community ethics source combining curiosity with protection of private data.
     note_lv: Kopienas ētikas avots, kas savieno zinātkāri ar privāto datu aizsardzību.
 
+  - id: acsc_white_hat
+    title: White hat — Cyber.gov.au glossary
+    publisher: Australian Cyber Security Centre
+    source_type: institutional_glossary
+    tier: 2
+    url: https://www.cyber.gov.au/glossary/white-hat
+    language: en
+    last_reviewed: "2026-09-16"
+    supports: [white_hat_hacker]
+    note_en: Institutional evidence for current usage; authorization must still be assessed from the actual scope and rules.
+    note_lv: Institucionāls pierādījums pašreizējam lietojumam; pilnvarojums joprojām jāvērtē pēc faktiskā tvēruma un noteikumiem.
+
+  - id: giac_script_kiddie
+    title: "Script Kiddies: What Are They and What Are They Doing?"
+    publisher: Global Information Assurance Certification (GIAC)
+    source_type: secondary_analysis
+    tier: 5
+    url: https://www.giac.org/paper/gsec/244/script-kiddies-what-doing/100752
+    language: en
+    last_reviewed: "2026-09-16"
+    supports: [script_kiddie]
+    note_en: Historical professional-community evidence of usage; not a formal threat-actor taxonomy.
+    note_lv: Vēsturisks profesionālās kopienas lietojuma avots; ne formāla apdraudējuma aktoru taksonomija.
+
   - id: rfpolicy
     title: RFPolicy 2.0
     publisher: Rain Forest Puppy / Packet Storm archive
@@ -308,6 +368,18 @@ sources:
     url: https://dl.packetstormsecurity.net/papers/general/rfpolicy-2.0.txt
     language: en
     last_reviewed: "2026-09-15"
-    supports: [full_disclosure, responsible_disclosure, cvd]
+    supports: [full_disclosure]
     note_en: Historical disclosure-policy document showing that labels and actual coordination practices do not map neatly.
     note_lv: Vēsturisks atklāšanas politikas dokuments, kas rāda, ka apzīmējumi un faktiskā koordinācija nav vienkārši pielīdzināmi.
+
+  - id: phrack_archive
+    title: Phrack archive
+    publisher: Phrack
+    source_type: community_primary
+    tier: 4
+    url: https://phrack.org/
+    language: en
+    last_reviewed: "2026-09-16"
+    supports: []
+    note_en: Reviewed as a hacker-culture corpus, not used as a direct definition source in this release.
+    note_lv: Pārbaudīts kā hakeru kultūras korpuss; šajā laidienā netiek izmantots kā tiešs definīciju avots.

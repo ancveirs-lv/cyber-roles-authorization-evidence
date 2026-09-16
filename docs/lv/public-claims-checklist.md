@@ -1,3 +1,8 @@
+---
+title: Publisku kiberdrošības apgalvojumu pārbaude
+description: Kontrolsaraksts tieša novērojuma, puses paziņojuma, apstiprināta atraduma, secinājuma, hipotēzes un viedokļa nošķiršanai.
+---
+
 # Publisku apgalvojumu pārbaude
 
 Izmanto šo kontrolsarakstu pirms dalīšanās ar video, interviju, ierakstu vai “ātro incidenta analīzi”.
@@ -14,11 +19,14 @@ Izmanto šo kontrolsarakstu pirms dalīšanās ar video, interviju, ierakstu vai
 
 | Marķējums | Nozīme | Piemēra formulējums |
 |---|---|---|
-| Apstiprināts fakts | Pamatots ar norādāmu primāro avotu vai pārbaudāmu artefaktu | “Organizācija apstiprināja pakalpojuma nepieejamību.” |
-| Avota apgalvojums | Kādas puses teiktais, kas vēl nav neatkarīgi pārbaudīts | “Uzbrucējs apgalvo, ka ieguvis datus; tas nav neatkarīgi apstiprināts.” |
-| Secinājums | Loģisks vērtējums no pieejamajiem datiem | “No publiskās laika līnijas var secināt, ka...” |
+| Tieši novērots | Fiksēts pārbaudāmā artefaktā vai novērots ar norādītu metodi | “Publiskais pakalpojums 14.32 UTC atgrieza HTTP 503; atbilde tika saglabāta.” |
+| Puses paziņojums | Organizācijas, iestādes, pētnieka vai uzbrucēja teiktais; pirmavots pašam paziņojumam, ne obligāti notikumam | “Organizācija ziņo par nepieejamību; neatkarīga telemetrija nav pieejama.” |
+| Savstarpēji apstiprināts atradums | Pamatots ar neatkarīgiem pierādījumiem vai vairākiem avotiem, kuru piekļuve un metode ir norādīta | “Statusa dati un divi neatkarīgi mērījumi rāda, ka pārrāvums sākās pirms 14.30 UTC.” |
+| Secinājums | Loģisks vērtējums, kuram atklāti pamata novērojumi un alternatīvas | “No publiskās laika līnijas var secināt, ka...” |
 | Hipotēze | Pārbaudāms, bet vēl neapstiprināts skaidrojums | “Viena no iespējām ir..., taču trūkst žurnālu datu.” |
 | Viedoklis | Personisks vai normatīvs vērtējums | “Manuprāt, komunikācija bija novēlota.” |
+
+Pirmavots automātiski nav apstiprināts fakts. Tas var droši pierādīt, ko konkrētā puse ir pateikusi, kamēr pašam tehniskajam apgalvojumam vēl vajadzīgs neatkarīgs apstiprinājums.
 
 ## Brīdinājuma pazīmes
 

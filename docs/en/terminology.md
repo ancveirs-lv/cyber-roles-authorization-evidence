@@ -1,3 +1,8 @@
+---
+title: Cybersecurity terminology
+description: Source-backed distinctions between hackers, attackers, security researchers, ethical hackers and penetration testers.
+---
+
 # Terminology
 
 ## The safest default
@@ -11,7 +16,7 @@ Name a person by a verifiable action and context, not merely by a self-descripti
 | Security researcher | A person researching system security properties or vulnerabilities | The title does not itself authorize testing a specific system |
 | Ethical hacker | A widely recognised professional label | “Ethical” is not legal permission or a uniform qualification |
 | Penetration tester | Performs a planned assessment within scope and rules of engagement | Not every penetration test is a Red Team exercise |
-| Attacker | A person or group performing attack activity | Intent, attribution, and identity still require evidence |
+| Attacker | In the cited NIST entry, a person attempting to exploit vulnerabilities | Broader actor taxonomies may separately cover groups; automated tooling is an attack mechanism, not automatically the actor |
 | Threat actor | An analytical label for an actor creating cyber risk | It should not be equated automatically with a named group or state |
 
 ## Why hacker and cracker are not a simple pair
@@ -28,4 +33,4 @@ The precise formula is:
 
 > Role describes function. Authorization defines permitted action. Intent describes motivation. None of them substitutes for the others.
 
-The complete structured terminology set is in `data/terms.yaml`.
+The complete structured terminology set is in [`data/terms.yaml`](https://github.com/ancveirs-lv/cyber-roles-authorization-evidence/blob/main/data/terms.yaml). Claim-level support and exact locators are in the [evidence register](evidence-register.md).

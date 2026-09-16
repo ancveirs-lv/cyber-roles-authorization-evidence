@@ -1,3 +1,8 @@
+---
+title: Cyber incident commentary risk
+description: How premature, speculative or over-detailed public commentary can affect response, attribution and investigations.
+---
+
 # Incident commentary risk
 
 Public communication can help society, customers, and defenders. It can also become part of incident risk when unverified information is published too early or in excessive detail.

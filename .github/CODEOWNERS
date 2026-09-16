@@ -1,0 +1,8 @@
+# Review changes that affect publication, validation, and canonical data.
+/.github/workflows/ @ancveirs-lv
+/data/ @ancveirs-lv
+/schemas/ @ancveirs-lv
+/scripts/ @ancveirs-lv
+/mkdocs.yml @ancveirs-lv
+/requirements.in @ancveirs-lv
+/requirements.txt @ancveirs-lv

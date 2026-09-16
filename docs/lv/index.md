@@ -1,3 +1,8 @@
+---
+title: Kiberdrošības lomas, pilnvarojums un pierādījumi
+description: Divvalodu atsauce kiberdrošības lomu, atļauju, pierādījumu, nolūka un atbildības nošķiršanai.
+---
+
 # Ievads
 
 Šis projekts palīdz precīzi runāt par kiberdrošības cilvēkiem, komandām, programmām un publiskiem apgalvojumiem. Tā nav viena “pareizo vārdu” vārdnīca. Dažādi institucionālie, profesionālie un kopienas avoti reizēm vienu terminu lieto atšķirīgi.
@@ -24,12 +29,12 @@
 
 ## Ieteicamais lasīšanas ceļš
 
-1. [Terminoloģija](termini.md)
-2. [Komandu krāsas](komandas.md)
-3. [CVD, VDP, Bug Bounty un pentests](ievainojamibu-programmas.md)
-4. [Loma, pilnvarojums un pierādījumi](lomu-pilnvarojuma-pieradijumu-matrica.md)
-5. [Publisku apgalvojumu pārbaude](publisku-apgalvojumu-kontrolsaraksts.md)
-6. [Incidentu komentēšanas risks](incidentu-komentari.md)
+1. [Terminoloģija](terminology.md)
+2. [Komandu krāsas](teams.md)
+3. [CVD, VDP, Bug Bounty un pentests](vulnerability-programs.md)
+4. [Loma, pilnvarojums un pierādījumi](role-authorization-evidence.md)
+5. [Publisku apgalvojumu pārbaude](public-claims-checklist.md)
+6. [Incidentu komentēšanas risks](incident-commentary.md)
 
 !!! warning "Atļaujas robeža"
     Šī dokumentācija nepadara nevienu sistēmu par atļautu testēšanas mērķi. Vienmēr jāizlasa konkrētās sistēmas politika, tvērums un iesaistes noteikumi.

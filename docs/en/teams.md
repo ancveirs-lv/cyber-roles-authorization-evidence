@@ -1,3 +1,8 @@
+---
+title: Red, Blue, Purple and White Teams
+description: What cybersecurity team colours mean, where the roles overlap and why a colour is not a personal identity.
+---
+
 # Team colours
 
 A team colour describes a function in a particular exercise or organisational model. It is not a permanent personal identity.
@@ -5,7 +10,7 @@ A team colour describes a function in a particular exercise or organisational mo
 | Concept | Core function | What it is not |
 |---|---|---|
 | Red Team | Authorised emulation of adversary capabilities to assess prevention, detection, and response | A synonym for every penetration test or a malicious hacker |
-| Blue Team | Maintains defence, monitors, detects, analyses, and responds | One universal job list across all organisations |
+| Blue Team | In an exercise, the defensive side; in broader industry usage, a defensive security function | A synonym for every SOC, CSIRT, or defensive job |
 | Purple Team / purple teaming | Connects attack techniques with defensive improvement | Necessarily a permanent or independent team |
 | White Team | Controls the exercise, enforces rules and safety boundaries, and evaluates results | A white-hat hacker |
 
@@ -17,7 +22,9 @@ The [NIST Red Team definition](https://csrc.nist.gov/glossary/term/red_team) emp
 
 ## Purple Team: noun or activity?
 
-The safest wording is *purple teaming*: a collaboration mode in which Red and Blue participants execute an attack technique, check detection, fix gaps, and repeat the test. Some organisations have a formal Purple Team unit, but this is not a universal requirement. EU DORA threat-led testing rules recognise a limited purple teaming exercise.
+The safest wording is *purple teaming*: a collaboration mode that can combine adversary techniques with prevention, detection, response, knowledge transfer, gap closure, and retesting. Some organisations have a formal Purple Team unit, but this is not a universal requirement. EU DORA threat-led testing rules distinguish controlled collaboration from unrestricted disclosure during an active test; neither form expands the authorised scope.
+
+NIST's Blue Team and White Team glossary entries are exercise-oriented. Broader industry use of *Blue Team* as a standing defensive function is common, but it should not erase the different mandates of a SOC, CSIRT, incident-response team, or security engineering function. Likewise, a commercial Red Team engagement may use a control team without calling it a White Team.
 
 ## White means two different things
 

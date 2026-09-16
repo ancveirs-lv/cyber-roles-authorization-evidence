@@ -1,3 +1,8 @@
+---
+title: Terminoloģijas un pierādījumu metodoloģija
+description: Divvalodu kiberdrošības atsauces avotu hierarhija, terminu statusi, izmaiņu noteikumi un juridiskās atrunas.
+---
+
 # Metodoloģija
 
 ## Avotu hierarhija
@@ -15,6 +20,8 @@
 - `established` — nostiprināts profesionāls vai tehnisks jēdziens;
 - `established_with_context` — atzīts, bet tā robežas dažādos ietvaros atšķiras;
 - `historical_or_community_jargon` — autentisks, bet ne formāls vai universāls;
+- `common_but_contested` — joprojām izplatīts, bet tā formulējums vai robežas ir strīdīgas;
+- `project_descriptive_category` — projekta skaidri radīta analītiska kategorija, ne nozares loma;
 - `avoid_as_canonical` — sastopams, taču pārāk nekonsekvents kanoniskai vārdnīcai;
 - `editorial_metaphor` — autora radīts tēls, glabājas atsevišķi no terminiem.
 
@@ -34,4 +41,4 @@ Negatīvs atradums — piemēram, “termins nav atrodams pārbaudītajos instit
 
 Juridiskie secinājumi jāpiesaista konkrētai jurisdikcijai un politikas tekstam. Vispārīgais princips “labs nodoms nav automātiska atļauja” ir drošs, bet konkrēta VDP vai CVD programma var nepārprotami autorizēt noteikumiem atbilstošu testēšanu savā tvērumā.
 
-Strukturētie avoti ir `data/sources.yaml`, bet terminu ieraksti — `data/terms.yaml`.
+Strukturētie avoti ir `data/sources.yaml`, terminu ieraksti — `data/terms.yaml`, bet apgalvojumu līmeņa atsauces un lokatori — `data/claims.yaml`. Rupjā `source.supports` saite palīdz navigācijai, bet nepierāda, ka avots pamato katru termina ieraksta lauku.

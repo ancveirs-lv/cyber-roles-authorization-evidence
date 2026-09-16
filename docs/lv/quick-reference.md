@@ -1,3 +1,8 @@
+---
+title: Kiberdrošības lomu īsā atsauce
+description: Īsas definīcijas un pieci pierādījumu jautājumi kiberdrošības lomām, komandām un ievainojamību mehānismiem.
+---
+
 # Īsā atsauce
 
 ## Kas ir kas
@@ -12,8 +17,9 @@
 | Purple teaming | Red un Blue sadarbības prakse aizsardzības uzlabošanai |
 | White Team | Kontrolē un vērtē drošības vingrinājumu |
 | CVD | Koordinēts ievainojamības apstrādes un publiskošanas process |
-| VDP | Organizācijas publiskie ziņošanas, tvēruma un labticīgas pētniecības noteikumi |
-| `security.txt` | Standartizēts kontaktu/politikas atrašanas fails, ne automātiska atļauja |
+| VDP politika | Publiskie ziņošanas, tvēruma, metožu un apstrādes noteikumi |
+| VDP programma | Organizācijas spēja uzturēt saņemšanu, triāžu, koordināciju un komunikāciju |
+| `security.txt` | IETF definēts kontakta/politikas atrašanas formāts, ne automātiska atļauja |
 | Bug Bounty | Programma ar noteiktu tvērumu un iespējamu atlīdzību par kvalificējošu atradumu |
 | Pentests | Pasūtīta drošības pārbaude ar līgumu, tvērumu un ziņojumu |
 
@@ -25,4 +31,4 @@
 4. Vai ir nodalīts fakts, secinājums un **hipotēze**?
 5. Vai kļūdas tiek izlabotas un ir redzama **atbildība**?
 
-> Sarkana cepure nav Red Team pierādījums. Tikpat maz sekotāju skaits ir incidenta izmeklēšanas pierādījums.
+> **Redakcionāla metafora:** sarkana cepure nav Red Team pierādījums. Tikpat maz sekotāju skaits ir incidenta izmeklēšanas pierādījums.

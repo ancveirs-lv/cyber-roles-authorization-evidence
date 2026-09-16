@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/schemas/editorial-metaphors.schema.json",
+  "$id": "https://raw.githubusercontent.com/ancveirs-lv/cyber-roles-authorization-evidence/main/schemas/editorial-metaphors.schema.json",
   "title": "Editorial metaphors",
   "type": "object",
   "additionalProperties": false,

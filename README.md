@@ -17,6 +17,7 @@ It deliberately avoids presenting every online “hat colour” as an industry s
 
 - paired Latvian and English documentation;
 - a source-backed terminology dataset in YAML;
+- a claim-level evidence register with exact source locators;
 - matrices for roles, authorization, evidence, and disclosure mechanisms;
 - a checklist for evaluating public cyber claims;
 - guidance on incident commentary risks;
@@ -34,8 +35,7 @@ cd cyber-roles-authorization-evidence
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python scripts/configure_repository.py --github-user ancveirs-lv
+python -m pip install --require-hashes -r requirements.txt
 python scripts/validate.py
 mkdocs serve
 ```
@@ -46,7 +46,7 @@ On Windows PowerShell, activate the environment with:
 .venv\Scripts\Activate.ps1
 ```
 
-Replace `ancveirs-lv` with your GitHub account name. Open `http://127.0.0.1:8000/` after the local server starts. See [INSTALL.md](INSTALL.md) for the full local, GitHub, and GitHub Pages path.
+For a fork, run `python scripts/configure_repository.py --github-user YOUR-GITHUB-OWNER` once to update repository URLs. Open `http://127.0.0.1:8000/` after the local server starts. See [INSTALL.md](INSTALL.md) for the full local, GitHub, and GitHub Pages path.
 
 ## Editorial boundary
 

@@ -25,7 +25,7 @@ On Windows, `python` may be used instead of `python3`.
 Extract the archive and enter the project directory:
 
 ```bash
-unzip cyber-roles-authorization-evidence-v0.1.0.zip
+unzip cyber-roles-authorization-evidence-v0.2.0.zip
 cd cyber-roles-authorization-evidence
 ```
 
@@ -46,16 +46,16 @@ macOS and Linux:
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install --require-hashes -r requirements.txt
 ```
 
-Configure repository URLs in the template:
+If this is a fork, configure repository URLs for the new owner:
 
 ```bash
 python scripts/configure_repository.py --github-user ancveirs-lv
 ```
 
-The command replaces the GitHub-owner placeholders in `mkdocs.yml`, `CITATION.cff`, and the setup documentation. Preview the affected files without changing them by adding `--dry-run`.
+The command detects the current owner in `mkdocs.yml` and updates repository URLs in the configuration, citation metadata, and setup documentation. Preview the affected files without changing them by adding `--dry-run`.
 
 Windows PowerShell:
 
@@ -63,7 +63,7 @@ Windows PowerShell:
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install --require-hashes -r requirements.txt
 ```
 
 Validate the datasets and documentation links:
@@ -160,9 +160,9 @@ Do not add an editorial metaphor to `data/terms.yaml`. Put it in `data/editorial
 After the first reviewed publication:
 
 ```bash
-git tag -a v0.1.0 -m "Initial bilingual release"
-git push origin v0.1.0
-gh release create v0.1.0 --generate-notes
+git tag -a v0.2.0 -m "Evidence and publication hardening"
+git push origin v0.2.0
+gh release create v0.2.0 --generate-notes
 ```
 
 Update `CITATION.cff`, `CHANGELOG.md`, and the version in the ZIP filename before later releases.

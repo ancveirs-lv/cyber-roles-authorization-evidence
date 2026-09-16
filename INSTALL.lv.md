@@ -25,7 +25,7 @@ Windows vidē `python3` vietā var būt jālieto `python`.
 Atarhivē failu un atver projekta direktoriju:
 
 ```bash
-unzip cyber-roles-authorization-evidence-v0.1.0.zip
+unzip cyber-roles-authorization-evidence-v0.2.0.zip
 cd cyber-roles-authorization-evidence
 ```
 
@@ -46,10 +46,10 @@ macOS un Linux:
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install --require-hashes -r requirements.txt
 ```
 
-Konfigurē repozitorija adreses veidnē:
+Ja šis ir fork, konfigurē repozitorija adreses jaunajam īpašniekam:
 
 ```bash
 python scripts/configure_repository.py --github-user ancveirs-lv
@@ -63,7 +63,7 @@ Windows PowerShell:
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install --require-hashes -r requirements.txt
 ```
 
 Pārbaudi datu kopas un dokumentācijas saites:
@@ -160,9 +160,9 @@ Redakcionālu metaforu nepievieno `data/terms.yaml`. Ievieto to `data/editorial_
 Pēc pirmās pārskatītās publikācijas:
 
 ```bash
-git tag -a v0.1.0 -m "Initial bilingual release"
-git push origin v0.1.0
-gh release create v0.1.0 --generate-notes
+git tag -a v0.2.0 -m "Pierādījumu un publicēšanas nostiprināšana"
+git push origin v0.2.0
+gh release create v0.2.0 --generate-notes
 ```
 
 Pirms nākamajiem laidieniem atjaunini `CITATION.cff`, `CHANGELOG.md` un versiju ZIP faila nosaukumā.
