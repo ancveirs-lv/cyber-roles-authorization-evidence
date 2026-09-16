@@ -10,13 +10,13 @@ Ieguldījumi ir gaidīti, ja tie uzlabo precizitāti, avotu kvalitāti, tulkojum
 2. Link a primary or authoritative source.
 3. Explain whether the source is normative, institutional, professional, academic, historical/community, or secondary.
 4. Update both English and Latvian definitions.
-5. Update `last_reviewed`.
-6. Run all checks.
+5. Add or update the relevant claim in `data/claims.yaml`, including the
+   source locator and support type.
+6. Update `last_reviewed`.
+7. Run all checks.
 
 ```bash
-python scripts/validate.py
-pytest
-mkdocs build --strict
+make check
 ```
 
 ## Source preference

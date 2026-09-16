@@ -1,3 +1,8 @@
+---
+title: Kiberdrošības terminoloģija
+description: Avotos balstīts hakeru, uzbrucēju, drošības pētnieku, ētisko hakeru un penetrācijas testētāju nošķīrums.
+---
+
 # Terminoloģija
 
 ## Drošākais pamatprincips
@@ -11,7 +16,7 @@ Nosauc cilvēku pēc pārbaudāmas darbības un konteksta, nevis tikai pēc paš
 | Drošības pētnieks | Persona, kas pēta sistēmu drošības īpašības vai ievainojamības | Nosaukums pats par sevi nedod tiesības testēt konkrētu sistēmu |
 | Ētiskais hakeris | Plaši atpazīstams profesionāls apzīmējums | “Ētisks” nav juridiska atļauja vai vienota kvalifikācija |
 | Penetrācijas testētājs | Veic plānotu pārbaudi noteiktā tvērumā un pēc iesaistes noteikumiem | Ne katrs pentests ir Red Team vingrinājums |
-| Uzbrucējs | Persona vai grupa, kas veic uzbrukuma darbības | Nolūks, piesaiste un identitāte jāpamato ar pierādījumiem |
+| Uzbrucējs | Citētajā NIST ierakstā — persona, kas mēģina izmantot ievainojamības | Plašākas aktoru taksonomijas grupas var aprakstīt atsevišķi; automatizēts rīks pats par sevi nav aktors |
 | Apdraudējuma aktors | Analītisks apzīmējums aktoram, kas rada kiberapdraudējumu | Nevajag automātiski pielīdzināt konkrētai valstij vai grupējumam |
 
 ## Kāpēc “hakeris” un “krekeris” nav vienkāršs pretstats
@@ -28,4 +33,4 @@ Precīza formula:
 
 > Loma apraksta funkciju. Pilnvarojums nosaka atļauto rīcību. Nolūks raksturo motivāciju. Neviens no tiem viens pats neaizstāj pārējos.
 
-Pilnā strukturētā terminu kopa atrodas `data/terms.yaml`.
+Pilnā strukturētā terminu kopa atrodas [`data/terms.yaml`](https://github.com/ancveirs-lv/cyber-roles-authorization-evidence/blob/main/data/terms.yaml). Apgalvojumu līmeņa pamatojums un precīzas avotu vietas ir [pierādījumu reģistrā](evidence-register.md).

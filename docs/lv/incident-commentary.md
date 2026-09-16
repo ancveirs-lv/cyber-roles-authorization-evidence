@@ -1,3 +1,8 @@
+---
+title: Kiberincidentu komentēšanas risks
+description: Kā pāragra, spekulatīva vai pārmērīgi detalizēta publiska komentēšana var ietekmēt reaģēšanu un izmeklēšanu.
+---
+
 # Incidentu komentēšanas risks
 
 Publiska komunikācija var palīdzēt sabiedrībai, klientiem un aizstāvjiem. Tā var arī kļūt par incidenta riska daļu, ja nepārbaudīta informācija tiek publicēta pārāk ātri vai pārāk detalizēti.

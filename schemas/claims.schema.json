@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ancveirs-lv/cyber-roles-authorization-evidence/main/schemas/claims.schema.json",
+  "title": "Claim-level evidence register",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "claims"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/claim"}
+    }
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+    "nonEmptyString": {"type": "string", "minLength": 1},
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id", "support_type", "locator", "jurisdiction",
+        "normative_status", "retrieved"
+      ],
+      "properties": {
+        "source_id": {"$ref": "#/$defs/id"},
+        "support_type": {
+          "enum": [
+            "defines", "supports", "limits", "mentions",
+            "historical_usage", "current_usage", "alternative_title"
+          ]
+        },
+        "locator": {"$ref": "#/$defs/nonEmptyString"},
+        "jurisdiction": {"$ref": "#/$defs/nonEmptyString"},
+        "normative_status": {"$ref": "#/$defs/nonEmptyString"},
+        "retrieved": {"type": "string", "format": "date"}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "term_ids", "claim_type", "text_en", "text_lv",
+        "citations", "last_reviewed", "reviewer_role"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "term_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/id"}
+        },
+        "claim_type": {
+          "enum": [
+            "definition", "authorization_boundary", "role_boundary",
+            "evidence_boundary", "source_status", "usage"
+          ]
+        },
+        "text_en": {"$ref": "#/$defs/nonEmptyString"},
+        "text_lv": {"$ref": "#/$defs/nonEmptyString"},
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/citation"}
+        },
+        "last_reviewed": {"type": "string", "format": "date"},
+        "reviewer_role": {"enum": ["maintainer", "external_reviewer"]}
+      }
+    }
+  }
+}

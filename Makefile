@@ -1,7 +1,7 @@
-.PHONY: install validate test serve build check
+.PHONY: install validate test serve build verify-site check sources
 
 install:
-	python -m pip install -r requirements.txt
+	python -m pip install --require-hashes -r requirements.txt
 
 validate:
 	python scripts/validate.py
@@ -15,4 +15,10 @@ serve:
 build:
 	mkdocs build --strict
 
-check: validate test build
+verify-site: build
+	python scripts/verify_site.py
+
+sources:
+	python scripts/check_external_links.py
+
+check: validate test verify-site

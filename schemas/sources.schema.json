@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/schemas/sources.schema.json",
+  "$id": "https://raw.githubusercontent.com/ancveirs-lv/cyber-roles-authorization-evidence/main/schemas/sources.schema.json",
   "title": "Cyber terminology sources",
   "type": "object",
   "additionalProperties": false,
@@ -41,7 +41,7 @@
         "last_reviewed": {"type": "string", "format": "date"},
         "supports": {
           "type": "array",
-          "minItems": 1,
+          "minItems": 0,
           "items": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
           "uniqueItems": true
         },

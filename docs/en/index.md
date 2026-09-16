@@ -1,3 +1,8 @@
+---
+title: Cybersecurity roles, authorization and evidence
+description: A bilingual reference for separating cybersecurity roles, permission, evidence, intent and accountability.
+---
+
 # Introduction
 
 This project helps people speak precisely about cybersecurity people, teams, programmes, and public claims. It is not a single dictionary of “correct words”. Institutional, professional, and community sources sometimes use the same term differently.

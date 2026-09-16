@@ -1,12 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/schemas/terms.schema.json",
+  "$id": "https://raw.githubusercontent.com/ancveirs-lv/cyber-roles-authorization-evidence/main/schemas/terms.schema.json",
   "title": "Cyber terminology dataset",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "terms"],
   "properties": {
-    "schema_version": {"const": 1},
+    "schema_version": {"const": 2},
     "terms": {
       "type": "array",
       "minItems": 1,
@@ -21,7 +21,7 @@
       "required": [
         "id", "label_en", "label_lv", "domain", "status",
         "definition_en", "definition_lv", "authorization_note_en",
-        "authorization_note_lv", "not_equivalent_to", "source_ids",
+        "authorization_note_lv", "not_synonymous_with", "source_ids",
         "last_reviewed"
       ],
       "properties": {
@@ -38,14 +38,15 @@
         "status": {
           "enum": [
             "established", "established_with_context",
-            "historical_or_community_jargon", "avoid_as_canonical"
+            "historical_or_community_jargon", "common_but_contested",
+            "project_descriptive_category", "avoid_as_canonical"
           ]
         },
         "definition_en": {"$ref": "#/$defs/nonEmptyString"},
         "definition_lv": {"$ref": "#/$defs/nonEmptyString"},
         "authorization_note_en": {"$ref": "#/$defs/nonEmptyString"},
         "authorization_note_lv": {"$ref": "#/$defs/nonEmptyString"},
-        "not_equivalent_to": {
+        "not_synonymous_with": {
           "type": "array",
           "items": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
           "uniqueItems": true

@@ -1,6 +1,7 @@
 site_name: Cyber Roles, Authorization & Evidence
 site_description: Bilingual Latvian-English reference for cybersecurity roles, authorization and evidence
 site_author: Zigmārs Ancveirs
+site_url: https://ancveirs-lv.github.io/cyber-roles-authorization-evidence/
 repo_name: cyber-roles-authorization-evidence
 repo_url: https://github.com/ancveirs-lv/cyber-roles-authorization-evidence
 edit_uri: edit/main/docs/
@@ -25,6 +26,33 @@ extra_css:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: false
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: lv
+          name: Latviešu
+          build: true
+          site_name: Kiberdrošības lomas, pilnvarojums un pierādījumi
+          site_description: Divvalodu atsauce par kiberdrošības lomām, pilnvarojumu un pierādījumiem
+          nav_translations:
+            Home: Sākums
+            Terminology: Terminoloģija
+            Team colours: Komandu krāsas
+            CVD, VDP, Bug Bounty and pentesting: CVD, VDP, Bug Bounty un pentests
+            Role, authorization and evidence: Loma, pilnvarojums un pierādījumi
+            Evaluating public claims: Publisku apgalvojumu pārbaude
+            Incident commentary risk: Incidentu komentēšanas risks
+            Quick reference: Īsā atsauce
+            Historical and community jargon: Vēsturiskais un kopienas žargons
+            Evidence register: Pierādījumu reģistrs
+            Methodology: Metodoloģija
 
 markdown_extensions:
   - admonition
@@ -37,27 +65,15 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Latviešu:
-      - Ievads: lv/index.md
-      - Terminoloģija: lv/termini.md
-      - Komandu krāsas: lv/komandas.md
-      - CVD, VDP, Bug Bounty un pentests: lv/ievainojamibu-programmas.md
-      - Loma, pilnvarojums un pierādījumi: lv/lomu-pilnvarojuma-pieradijumu-matrica.md
-      - Publisku apgalvojumu pārbaude: lv/publisku-apgalvojumu-kontrolsaraksts.md
-      - Incidentu komentēšanas risks: lv/incidentu-komentari.md
-      - Īsā atsauce: lv/isa-atsauce.md
-      - Vēsturiskais un kopienas žargons: lv/zargons.md
-      - Metodoloģija: lv/metodologija.md
-  - English:
-      - Introduction: en/index.md
-      - Terminology: en/terminology.md
-      - Team colours: en/teams.md
-      - CVD, VDP, Bug Bounty and pentesting: en/vulnerability-programs.md
-      - Role, authorization and evidence: en/role-authorization-evidence.md
-      - Evaluating public claims: en/public-claims-checklist.md
-      - Incident commentary risk: en/incident-commentary.md
-      - Quick reference: en/quick-reference.md
-      - Historical and community jargon: en/jargon.md
-      - Methodology: en/methodology.md
+  - Terminology: terminology.md
+  - Team colours: teams.md
+  - CVD, VDP, Bug Bounty and pentesting: vulnerability-programs.md
+  - Role, authorization and evidence: role-authorization-evidence.md
+  - Evaluating public claims: public-claims-checklist.md
+  - Incident commentary risk: incident-commentary.md
+  - Quick reference: quick-reference.md
+  - Historical and community jargon: jargon.md
+  - Evidence register: evidence-register.md
+  - Methodology: methodology.md
 
 strict: true

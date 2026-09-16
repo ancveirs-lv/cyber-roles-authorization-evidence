@@ -1,0 +1,229 @@
+schema_version: 1
+claims:
+  - id: hacker_meaning_depends_on_source
+    term_ids: [hacker]
+    claim_type: usage
+    text_en: Hacker has conflicting historical/community and current institutional meanings; the label alone does not establish criminality or authorization.
+    text_lv: Terminam hakeris ir atšķirīgas vēsturiskās/kopienas un mūsdienu institucionālās nozīmes; apzīmējums viens pats nepierāda noziedzīgu rīcību vai pilnvarojumu.
+    citations:
+      - source_id: rfc1392
+        support_type: historical_usage
+        locator: Hacker entry
+        jurisdiction: international_technical_history
+        normative_status: informational_rfc
+        retrieved: "2026-09-16"
+      - source_id: nist_hacker
+        support_type: current_usage
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+      - source_id: jargon_hacker
+        support_type: historical_usage
+        locator: Hacker entry
+        jurisdiction: hacker_culture
+        normative_status: community_primary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: attacker_is_not_automated_process
+    term_ids: [attacker]
+    claim_type: definition
+    text_en: In the cited NIST glossary entry, attacker means an individual; an automated process may be an attack mechanism but is not established by that source as the actor.
+    text_lv: Citētajā NIST vārdnīcas ierakstā uzbrucējs ir persona; automatizēts process var būt uzbrukuma mehānisms, bet šis avots to nedefinē kā aktoru.
+    citations:
+      - source_id: nist_attacker
+        support_type: defines
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: ethical_intent_is_not_authorization
+    term_ids: [ethical_hacker, authorised_testing]
+    claim_type: authorization_boundary
+    text_en: Ethical intent or a role label does not replace target-specific permission, scope, and rules.
+    text_lv: Ētisks nolūks vai lomas nosaukums neaizstāj konkrētam mērķim dotu atļauju, tvērumu un noteikumus.
+    citations:
+      - source_id: hackerone_safe_harbor
+        support_type: limits
+        locator: Gold Standard Safe Harbor Statement
+        jurisdiction: programme_policy
+        normative_status: professional_policy_example
+        retrieved: "2026-09-16"
+      - source_id: nist_rules_of_engagement
+        support_type: supports
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: red_team_requires_authorized_rules
+    term_ids: [red_team]
+    claim_type: authorization_boundary
+    text_en: Red Team activity is an authorized assessment bounded by objectives and rules of engagement; the label is not a licence for unsanctioned intrusion.
+    text_lv: Red Team darbība ir autorizēts novērtējums, ko ierobežo mērķi un iesaistes noteikumi; nosaukums nav atļauja neatļautai ielaušanai.
+    citations:
+      - source_id: nist_red_team
+        support_type: defines
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+      - source_id: nist_rules_of_engagement
+        support_type: limits
+        locator: CSRC glossary entry
+        jurisdiction: us_institutional
+        normative_status: institutional_glossary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: vdp_policy_and_program_are_distinct
+    term_ids: [vulnerability_disclosure_policy, vulnerability_disclosure_program]
+    claim_type: role_boundary
+    text_en: VDP may mean policy or programme; the policy is a document, while the programme is the wider organisational capability.
+    text_lv: VDP var nozīmēt politiku vai programmu; politika ir dokuments, bet programma ir plašāka organizācijas spēja.
+    citations:
+      - source_id: cisa_bod_20_01
+        support_type: defines
+        locator: Directive title and required actions
+        jurisdiction: us_federal_civilian
+        normative_status: binding_operational_directive
+        retrieved: "2026-09-16"
+      - source_id: certcc_cvd
+        support_type: defines
+        locator: CVD terminology page
+        jurisdiction: international_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+      - source_id: cisa_cvd_program
+        support_type: defines
+        locator: Programme guidance title and overview
+        jurisdiction: us_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: security_txt_is_not_permission
+    term_ids: [security_txt, vulnerability_disclosure_policy]
+    claim_type: authorization_boundary
+    text_en: A security.txt file aids contact and policy discovery; its presence or absence does not grant or deny testing permission.
+    text_lv: security.txt palīdz atrast kontaktu un politiku; faila esamība vai neesamība nedod un neatņem testēšanas atļauju.
+    citations:
+      - source_id: rfc9116
+        support_type: limits
+        locator: Section 5.5, Permission and Authorization
+        jurisdiction: international_technical_guidance
+        normative_status: ietf_informational_rfc
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: cvd_is_not_universal_test_permission
+    term_ids: [cvd]
+    claim_type: authorization_boundary
+    text_en: CVD is a coordination process, not universal permission to test any reachable asset; authorization depends on the applicable programme or policy.
+    text_lv: CVD ir koordinācijas process, ne universāla atļauja testēt jebkuru sasniedzamu aktīvu; pilnvarojums ir atkarīgs no piemērojamās programmas vai politikas.
+    citations:
+      - source_id: certcc_cvd
+        support_type: defines
+        locator: CVD terminology page
+        jurisdiction: international_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+      - source_id: certlv_cvd
+        support_type: limits
+        locator: FAQ answer 100
+        jurisdiction: latvia
+        normative_status: national_csirt_guidance
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: programme_safe_harbour_has_limits
+    term_ids: [authorised_testing, bug_bounty]
+    claim_type: authorization_boundary
+    text_en: A programme safe-harbour commitment is bounded by the named assets, methods, conditions, and the authority of the organisation making the commitment.
+    text_lv: Programmas drošā patvēruma solījumu ierobežo nosauktie aktīvi, metodes, nosacījumi un solījumu devušās organizācijas pilnvaras.
+    citations:
+      - source_id: hackerone_safe_harbor
+        support_type: limits
+        locator: Gold Standard Safe Harbor Statement
+        jurisdiction: programme_policy
+        normative_status: professional_policy_example
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: white_hat_is_not_scope
+    term_ids: [white_hat_hacker]
+    claim_type: authorization_boundary
+    text_en: White hat is a recognised label for legitimate defensive testing, but the colour label does not itself prove permission for a specific target.
+    text_lv: White hat ir atpazīstams apzīmējums likumīgai aizsardzības testēšanai, taču krāsas nosaukums pats nepierāda atļauju konkrētam mērķim.
+    citations:
+      - source_id: acsc_white_hat
+        support_type: current_usage
+        locator: Glossary entry
+        jurisdiction: australia
+        normative_status: national_cybersecurity_glossary
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: hacktivist_is_actor_motivation_label
+    term_ids: [hacktivist]
+    claim_type: usage
+    text_en: Hacktivist is used in current threat reporting as an actor-motivation label, not as a professional cybersecurity role.
+    text_lv: Haktīvists pašreizējos apdraudējumu pārskatos tiek lietots kā aktora motivācijas apzīmējums, ne profesionāla kiberdrošības loma.
+    citations:
+      - source_id: enisa_threat_landscape_2025
+        support_type: current_usage
+        locator: Threat actor and public-administration discussion
+        jurisdiction: european_union
+        normative_status: institutional_threat_report
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: incident_commentator_is_project_category
+    term_ids: [public_commentator]
+    claim_type: source_status
+    text_en: Cyber incident commentator is a project-defined descriptive category, not a standardised operational role.
+    text_lv: Kiberincidentu komentētājs ir projekta aprakstoša kategorija, ne standartizēta operacionāla loma.
+    citations:
+      - source_id: ncsc_incident_comms
+        support_type: supports
+        locator: Guidance on avoiding speculation and premature conclusions
+        jurisdiction: united_kingdom
+        normative_status: national_cybersecurity_guidance
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer
+
+  - id: responsible_disclosure_is_common_but_contested
+    term_ids: [responsible_disclosure, cvd]
+    claim_type: usage
+    text_en: Responsible disclosure remains common, but CVD is preferred here because responsible can imply a moral judgement instead of describing coordination.
+    text_lv: Responsible disclosure joprojām ir izplatīts, taču šeit priekšroka dota CVD, jo responsible var radīt morālu vērtējumu, nevis aprakstīt koordināciju.
+    citations:
+      - source_id: certcc_cvd
+        support_type: current_usage
+        locator: CVD terminology page
+        jurisdiction: international_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+      - source_id: first_cvd
+        support_type: supports
+        locator: Multi-party coordination guidance
+        jurisdiction: international_guidance
+        normative_status: institutional_guidance
+        retrieved: "2026-09-16"
+    last_reviewed: "2026-09-16"
+    reviewer_role: maintainer

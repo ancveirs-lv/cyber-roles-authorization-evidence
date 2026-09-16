@@ -17,6 +17,7 @@ Projekts nepasniedz katru internetā sastopamo “cepures krāsu” kā nozares 
 
 - paralēla dokumentācija latviešu un angļu valodā;
 - avotos balstīta YAML terminoloģijas datu kopa;
+- apgalvojumu līmeņa pierādījumu reģistrs ar precīzām avotu vietām;
 - lomu, pilnvarojuma, pierādījumu un ievainojamību programmu matricas;
 - publisku kiberdrošības apgalvojumu novērtēšanas kontrolsaraksts;
 - incidentu komentēšanas risku skaidrojums;
@@ -34,8 +35,7 @@ cd cyber-roles-authorization-evidence
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python scripts/configure_repository.py --github-user ancveirs-lv
+python -m pip install --require-hashes -r requirements.txt
 python scripts/validate.py
 mkdocs serve
 ```
@@ -46,7 +46,7 @@ Windows PowerShell vidē virtuālo vidi aktivizē ar:
 .venv\Scripts\Activate.ps1
 ```
 
-`ancveirs-lv` vietā ieraksti sava GitHub konta nosaukumu. Pēc lokālā servera palaišanas atver `http://127.0.0.1:8000/`. Pilns lokālās uzstādīšanas, GitHub publicēšanas un GitHub Pages ceļš ir aprakstīts [INSTALL.lv.md](INSTALL.lv.md).
+Ja veido savu fork, vienu reizi palaid `python scripts/configure_repository.py --github-user TAVS-GITHUB-ĪPAŠNIEKS`, lai atjauninātu repozitorija URL. Pēc lokālā servera palaišanas atver `http://127.0.0.1:8000/`. Pilns lokālās uzstādīšanas, GitHub publicēšanas un GitHub Pages ceļš ir aprakstīts [INSTALL.lv.md](INSTALL.lv.md).
 
 ## Redakcionālā robeža
 
