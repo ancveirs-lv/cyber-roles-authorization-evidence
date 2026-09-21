@@ -1,6 +1,7 @@
 name: Validate and build
 
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches: [main]
@@ -31,11 +32,17 @@ jobs:
       - name: Validate datasets and links
         run: python scripts/validate.py
 
+      - name: Verify generated glossary is current
+        run: python scripts/generate_glossary.py --check
+
       - name: Run tests
         run: pytest
 
       - name: Build documentation
         run: mkdocs build --strict
+
+      - name: Finalize language metadata
+        run: python scripts/postprocess_site.py
 
       - name: Verify localization and search metadata
         run: python scripts/verify_site.py

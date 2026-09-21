@@ -13,6 +13,10 @@ All notable changes are recorded here. The project follows [Semantic Versioning]
 - Made repository-owner configuration cover all tracked text configuration and documentation locations.
 - Derived built-site verification URLs from `mkdocs.yml` instead of a hard-coded GitHub owner.
 - Added fork-portability and invalid-owner regression tests.
+- Added one substantive generated glossary per language with stable anchors for all 29 terms.
+- Added `DefinedTermSet`/`DefinedTerm` structured data and controlled Open Graph metadata.
+- Made HTML language alternates absolute, added `x-default`, and enforced both in built-site verification.
+- Added manual CI dispatch and generated-content drift checks.
 
 ## [0.2.0] — 2026-09-16
 
