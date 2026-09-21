@@ -7,7 +7,6 @@ import sys
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin
 
 import yaml
 
@@ -28,6 +27,7 @@ BASE_URL = configured_base_url()
 PAGES = (
     "index",
     "terminology",
+    "glossary",
     "teams",
     "vulnerability-programs",
     "role-authorization-evidence",
@@ -47,6 +47,7 @@ class HeadParser(HTMLParser):
         self.canonical: str | None = None
         self.alternates: dict[str, str] = {}
         self.description: str | None = None
+        self.properties: dict[str, str] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = dict(attrs)
@@ -59,6 +60,8 @@ class HeadParser(HTMLParser):
                 self.alternates[values["hreflang"]] = values["href"]
         elif tag == "meta" and values.get("name") == "description":
             self.description = values.get("content")
+        elif tag == "meta" and values.get("property") and values.get("content"):
+            self.properties[values["property"]] = values["content"]
 
 
 def page_path(locale: str, page: str) -> Path:
@@ -76,6 +79,10 @@ def verify() -> list[str]:
     errors: list[str] = []
     descriptions: set[str] = set()
     expected_urls: set[str] = set()
+
+    social_card = SITE / "assets/social-card.png"
+    if not social_card.is_file():
+        errors.append("missing site/assets/social-card.png")
 
     for locale in ("en", "lv"):
         for page in PAGES:
@@ -99,20 +106,30 @@ def verify() -> list[str]:
             for alternate_locale in ("en", "lv"):
                 alternate_expected = page_url(alternate_locale, page)
                 alternate_actual = parser.alternates.get(alternate_locale)
-                if (
-                    alternate_actual is None
-                    or urljoin(expected, alternate_actual) != alternate_expected
-                ):
+                if alternate_actual != alternate_expected:
                     errors.append(
                         f"missing/wrong {alternate_locale} alternate for "
                         f"{path.relative_to(ROOT)}"
                     )
+            if parser.alternates.get("x-default") != page_url("en", page):
+                errors.append(f"missing/wrong x-default alternate for {path.relative_to(ROOT)}")
             if not parser.description:
                 errors.append(f"missing meta description: {path.relative_to(ROOT)}")
             elif parser.description in descriptions:
                 errors.append(f"duplicate meta description: {path.relative_to(ROOT)}")
             else:
                 descriptions.add(parser.description)
+            expected_og = {
+                "og:type": "website",
+                "og:url": expected,
+                "og:image": BASE_URL + "assets/social-card.png",
+            }
+            for key, value in expected_og.items():
+                if parser.properties.get(key) != value:
+                    errors.append(f"missing/wrong {key} for {path.relative_to(ROOT)}")
+            for key in ("og:title", "og:description"):
+                if not parser.properties.get(key):
+                    errors.append(f"missing {key} for {path.relative_to(ROOT)}")
 
     sitemap = SITE / "sitemap.xml"
     if not sitemap.is_file():

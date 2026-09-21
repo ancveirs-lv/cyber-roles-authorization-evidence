@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.meta %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.meta.title | e }}">
+    <meta property="og:description" content="{{ page.meta.description | e }}">
+    <meta property="og:url" content="{{ page.canonical_url }}">
+    <meta property="og:image" content="{{ config.site_url }}assets/social-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+{% endblock %}

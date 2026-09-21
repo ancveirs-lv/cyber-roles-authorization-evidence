@@ -28,6 +28,7 @@ DATASETS = (
 DOC_PAIRS = (
     ("lv/index.md", "en/index.md"),
     ("lv/terminology.md", "en/terminology.md"),
+    ("lv/glossary.md", "en/glossary.md"),
     ("lv/teams.md", "en/teams.md"),
     ("lv/vulnerability-programs.md", "en/vulnerability-programs.md"),
     ("lv/role-authorization-evidence.md", "en/role-authorization-evidence.md"),
