@@ -17,6 +17,8 @@ Izmanto šo kontrolsarakstu pirms dalīšanās ar video, interviju, ierakstu vai
 
 ## Apgalvojuma marķējums
 
+Šie seši marķējumi ir šī projekta redakcionāls apgalvojumu klasifikācijas modelis, nevis nozares standarts vai NIST/FIRST taksonomija.
+
 | Marķējums | Nozīme | Piemēra formulējums |
 |---|---|---|
 | Tieši novērots | Fiksēts pārbaudāmā artefaktā vai novērots ar norādītu metodi | “Publiskais pakalpojums 14.32 UTC atgrieza HTTP 503; atbilde tika saglabāta.” |

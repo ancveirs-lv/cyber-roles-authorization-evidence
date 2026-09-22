@@ -22,7 +22,7 @@ Publiska komunikācija var palīdzēt sabiedrībai, klientiem un aizstāvjiem. T
 
 ## Publiska atjauninājuma redakcionālais kontrolsaraksts
 
-Šis ir komunikācijas, ne juridiskās vai regulatorās atbilstības kontrolsaraksts. Atbildīgajai organizācijai atsevišķi jāizvērtē pienākumi ziņot CSIRT vai kompetentajai iestādei, regulatoriem, līgumpartneriem, ietekmētajām personām un citiem obligātajiem saņēmējiem.
+Šis ir komunikācijas, ne juridiskās vai regulatīvās atbilstības kontrolsaraksts. Atbildīgajai organizācijai atsevišķi jāizvērtē pienākumi ziņot CSIRT vai kompetentajai iestādei, regulatoriem, līgumpartneriem, ietekmētajām personām un citiem obligātajiem saņēmējiem.
 
 1. Kas ir apstiprināts šobrīd?
 2. Kas vēl nav zināms?
