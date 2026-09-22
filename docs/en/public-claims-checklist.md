@@ -17,6 +17,8 @@ Use this checklist before sharing a video, interview, post, or “rapid incident
 
 ## Claim labels
 
+These six labels are a project-defined editorial model for classifying claims, not an industry standard or a NIST/FIRST taxonomy.
+
 | Label | Meaning | Example wording |
 |---|---|---|
 | Directly observed | Recorded in a verifiable artefact or observed through a stated method | “The public service returned HTTP 503 at 14:32 UTC; the response was preserved.” |
